@@ -2,7 +2,7 @@ import Hero from "./Hero/Hero";
 
 export default function Sections() {
   return (
-    <main className="flex flex-col gap-[142px] w-fit md:max-w-screen-lg pt-[236px] md:pt-60 mx-auto">
+    <main className="flex flex-col  min-h-screen  gap-[142px] w-full md:max-w-screen-lg  md:pt-32 mx-auto">
       <Hero />
     </main>
   );
