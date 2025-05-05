@@ -66,7 +66,8 @@ export default function TopBackground() {
           </div>
         </div>
       </div>
-      <div className="absolute top-[-215px] left-1/2  -translate-x-1/2 z-0 hidden dark:md:block">
+      {/* top light */}
+      <div className="absolute top-[-315px] left-1/2  -translate-x-1/2 z-0 hidden dark:md:block">
         <Image
           width={809}
           height={877}
@@ -82,7 +83,9 @@ export default function TopBackground() {
           alt="dark mode highlighter for mobile"
         />
       </div>
-      <div className="absolute"></div>
+      {/* grid for light mode */}
+      <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_light.svg')] bg-[auto_auto] hidden md:block dark:hidden"></div>
+      <div className="absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mobile_light.svg')] bg-[auto_auto]  md:hidden dark:hidden"></div>
     </>
   );
 }
