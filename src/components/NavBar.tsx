@@ -1,7 +1,19 @@
+"use client";
 import classNames from "classnames";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 function NavBar() {
+  const [activeSection, setActiveSection] = useState("home");
+  useEffect(() => {
+    setActiveSection("home");
+  }, []);
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="fixed top-12 right-6 mx-auto flex flex-col gap-2.5 items-end z-50">
       <button className="bg-background card-shadow p-3 rounded">
@@ -24,8 +36,12 @@ function NavBar() {
         <ul>
           <li>
             <div
+              onClick={() => {
+                scrollToSection("home");
+                setActiveSection("home");
+              }}
               className={classNames("rounded p-1", {
-                "bg-primary text-white": true,
+                "bg-[var(--primary)] text-white": true,
               })}
             >
               Home
