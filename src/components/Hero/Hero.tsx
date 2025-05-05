@@ -17,7 +17,7 @@ export default function Hero() {
         <a
           href="/resume.pdf"
           download
-          className="bg-[var(--primary)] text-white rounded-[4px] px-6 py-2 md:px-8 md:py-3 text-sm md:text-xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
+          className="bg-[var(--primary)] text-white rounded-[4px] px-6 py-2 md:px-8 md:py-2 text-sm md:text-xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
         >
           Get Resume{" "}
           <span>
@@ -34,7 +34,7 @@ export default function Hero() {
           alt="Profile picture of Rahul Khan"
           width={280}
           height={320}
-          className="md:hidden w-full h-auto rounded-2xl border-4 border-white shadow-lg mx-auto"
+          className="md:hidden w-full h-auto rounded-2xl  shadow-lg mx-auto"
           priority
         />
 

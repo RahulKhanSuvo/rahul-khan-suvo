@@ -1,0 +1,14 @@
+type Props = {
+  plainText: string;
+  highlightedText: string;
+};
+export default function SectionHeader({ plainText, highlightedText }: Props) {
+  return (
+    <h2 className="text-[22px] md:text-[35px] text-center px-20">
+      {plainText}{" "}
+      <span className="px-2 rounded-[4px] bg-[var(--primary)] whitespace-nowrap">
+        {highlightedText}
+      </span>
+    </h2>
+  );
+}

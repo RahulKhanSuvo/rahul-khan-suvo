@@ -1,0 +1,27 @@
+[
+    {"name":"Html",
+    "icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"},
+    {"name":"Css",
+    "icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"},
+    {"name":"JavaScript","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+    {"name":"React",
+    "icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
+    {"name":"NextJs","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"},
+    {"name":"Typescript","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"},
+    {"name":"Redux","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"},
+
+    {"name":"NodeJs","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"},
+    {"name":"ExpressJs","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"},
+    {"name":"MongoDB","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"},
+    
+    {"name":"Git","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
+    {"name":"Mongoose","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg"},
+    {"name":"Postman","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"},
+    
+    {"name":"GitHub","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"},
+
+    {"name":"TailwindCSS","icon":"https://www.svgrepo.com/show/374118/tailwind.svg"},
+
+    {"name":"Figma","icon":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"}
+   
+]
