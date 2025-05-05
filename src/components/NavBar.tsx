@@ -37,14 +37,14 @@ function NavBar() {
           src="/menu_icon_light.svg"
           height={20}
           width={20}
-          className="block dark:hidden"
+          className=" dark:block hidden"
         />
         <Image
           alt="dark"
           src="/menu_icon_dark.svg"
           height={20}
           width={20}
-          className="dark:block hidden"
+          className="dark:hidden block"
         />
       </button>
 
