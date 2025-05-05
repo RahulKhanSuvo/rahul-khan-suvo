@@ -2,6 +2,7 @@ import SectionContainer from "../Section/SectionContainer";
 import SectionHeader from "../Section/SectionHeader";
 import skills from "@/data/skills.json";
 import Skill from "./Skill";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -14,6 +15,22 @@ export default function Skills() {
           ))}
         </div>
       </div>
+      <Image
+        src={"/tech_stack_grid_dark.svg"}
+        alt="Background grid"
+        width={569}
+        className="hidden dark:md:block absolute -top-[39px] -left-[135px] -z-10"
+        priority
+        height={373}
+      ></Image>
+      <Image
+        src={"/tech_stack_grid.svg"}
+        alt="Background grid"
+        width={569}
+        className="hidden dark:hidden md:block absolute -top-[149px] -left-[250px] -z-10"
+        priority
+        height={373}
+      ></Image>
     </SectionContainer>
   );
 }
