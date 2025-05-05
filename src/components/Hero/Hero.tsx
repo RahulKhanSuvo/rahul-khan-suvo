@@ -39,7 +39,7 @@ export default function Hero() {
         />
 
         {/* Desktop Image with background (shown on medium screens and up) */}
-        <div className="hidden md:block relative ">
+        <div className="hidden md:flex items-center justify-center  w-full h-auto">
           <Image
             src={"/profile_light_purple.png"}
             alt="Decorative background"
@@ -50,9 +50,9 @@ export default function Hero() {
           <Image
             src={"/profile.jpg"}
             alt="Profile picture of Rahul Khan"
-            height={40}
-            width={350}
-            className="min-w-[357px] h-[417px] z-10 mr-[7.7px] my-[6.5px] rounded-2xl  border-white shadow-lg"
+            height={417}
+            width={357}
+            className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-2xl  border-white shadow-lg"
           />
         </div>
       </div>
