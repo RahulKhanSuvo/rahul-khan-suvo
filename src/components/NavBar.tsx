@@ -1,24 +1,38 @@
+import classNames from "classnames";
 import Image from "next/image";
 
 function NavBar() {
   return (
     <div className="fixed top-12 right-6 mx-auto flex flex-col gap-2.5 items-end z-50">
-      <button className="bg-background card-shadow p-3 md:hidden rounded">
+      <button className="bg-background card-shadow p-3 rounded">
         <Image
-          alt="light menu icon"
-          className="dark:hidden block"
-          src={"/menu_icon_light.svg"}
+          alt="light"
+          src="/menu_icon_light.svg"
           height={20}
           width={20}
+          className="block dark:hidden"
         />
         <Image
-          alt="light menu icon"
-          className="dark:block hidden"
-          src={"/menu_icon_dark.svg"}
+          alt="dark"
+          src="/menu_icon_dark.svg"
           height={20}
           width={20}
+          className="dark:block hidden"
         />
       </button>
+      <nav>
+        <ul>
+          <li>
+            <div
+              className={classNames("rounded p-1", {
+                "bg-primary text-white": true,
+              })}
+            >
+              Home
+            </div>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
