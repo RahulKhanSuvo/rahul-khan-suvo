@@ -52,10 +52,23 @@ function NavBar() {
               }}
               className={classNames("rounded p-1", {
                 "bg-[var(--primary)] text-white": activeSection === "home",
-                "text-[var(--primary)]": activeSection !== "home",
               })}
             >
               Home
+            </div>
+          </li>
+          <li>
+            <div
+              onClick={() => {
+                scrollToSection("about");
+                setActiveSection("about");
+                setIsOpen(false);
+              }}
+              className={classNames("rounded p-1", {
+                "bg-[var(--primary)] text-white": activeSection === "about",
+              })}
+            >
+              About Me
             </div>
           </li>
           <li>
@@ -67,10 +80,38 @@ function NavBar() {
               }}
               className={classNames("rounded p-1", {
                 "bg-[var(--primary)] text-white": activeSection === "skills",
-                "text-[var(--primary)]": activeSection !== "skills",
               })}
             >
               Skills
+            </div>
+          </li>
+
+          <li>
+            <div
+              onClick={() => {
+                scrollToSection("projects");
+                setActiveSection("projects");
+                setIsOpen(false);
+              }}
+              className={classNames("rounded p-1", {
+                "bg-[var(--primary)] text-white": activeSection === "projects",
+              })}
+            >
+              Projects
+            </div>
+          </li>
+          <li>
+            <div
+              onClick={() => {
+                scrollToSection("contact");
+                setActiveSection("contact");
+                setIsOpen(false);
+              }}
+              className={classNames("rounded p-1", {
+                "bg-[var(--primary)] text-white": activeSection === "contact",
+              })}
+            >
+              Contact Me
             </div>
           </li>
         </ul>
