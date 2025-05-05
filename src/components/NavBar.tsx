@@ -27,10 +27,10 @@ function NavBar() {
   ];
 
   return (
-    <div className="fixed top-12 right-6 mx-auto flex flex-col gap-2.5 items-end z-50">
+    <div className="fixed top-12 right-6 mx-auto flex flex-col gap-2.5 items-end z-50 md:right-auto md:left-1/2 md:-translate-x-1/2">
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="bg-background card-shadow p-3 rounded"
+        className="bg-background card-shadow p-3 rounded md:hidden"
       >
         <Image
           alt="light"
@@ -53,11 +53,11 @@ function NavBar() {
           "bg-background card-shadow p-3 duration-300 ease-in-out rounded md:block",
           {
             "opacity-100 visible pointer-events-auto": isOpen,
-            "opacity-0 invisible pointer-events-none": !isOpen,
+            "opacity-0 md:opacity-100": !isOpen,
           }
         )}
       >
-        <ul className="space-y-1">
+        <ul className="flex flex-col gap-4 items-center text-lg font-normal md:flex-row whitespace-nowrap">
           {sections.map(({ id, label }) => (
             <li key={id}>
               <div
@@ -66,9 +66,12 @@ function NavBar() {
                   setActiveSection(id);
                   setIsOpen(false);
                 }}
-                className={classNames("rounded p-1 cursor-pointer", {
-                  "bg-[var(--primary)] text-white": activeSection === id,
-                })}
+                className={classNames(
+                  "rounded p-1 cursor-pointer duration-300 ease-in-out",
+                  {
+                    "bg-[var(--primary)] text-white": activeSection === id,
+                  }
+                )}
               >
                 {label}
               </div>
