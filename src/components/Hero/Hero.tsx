@@ -5,7 +5,7 @@ import Reveal from "../Reveal";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col-reverse md:flex-row items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl w-full gap-8 md:gap-[137px] py-8 md:py-12 z-20">
+    <section className="relative flex flex-col-reverse md:flex-row items-center justify-between mx-auto px-4 sm:px-6 lg:px-8  w-full gap-8 md:gap-[137px] py-8 md:py-12 z-20">
       {/* Text Content */}
       <div className="flex flex-col gap-1 md:gap-[14px] items-center md:items-start text-center md:text-start md:my-[58px]">
         <div className="">

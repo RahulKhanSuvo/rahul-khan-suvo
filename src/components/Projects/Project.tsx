@@ -58,7 +58,7 @@ export default function Project({
           rotateX: xRotation,
           rotateY: yRotation,
         }}
-        className="flex flex-col items-stretch w-full max-w-[428.4px] p-5 md:p-[18px] gap-[30px] card-shadow card"
+        className="flex flex-col items-stretch w-full  p-5 md:p-[18px] gap-[30px] card-shadow card"
       >
         <div
           style={{ transform: "translateZ(100px)" }}
