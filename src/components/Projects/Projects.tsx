@@ -27,7 +27,7 @@ export default function Projects() {
         alt="background highlight"
         width={558}
         height={558}
-        className="absolute hidden md:block"
+        className="absolute hidden md:block left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
       />
     </SectionContainer>
   );
