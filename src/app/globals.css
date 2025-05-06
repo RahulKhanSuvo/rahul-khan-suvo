@@ -41,5 +41,7 @@ body {
 
   }
 
-
+  .card {
+    @apply bg-[var(--card)] rounded-lg
+  }
 }

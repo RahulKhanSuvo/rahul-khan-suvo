@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { BiUpload } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
-import { DiVim } from "react-icons/di";
 
 type Props = {
   setImages: React.Dispatch<React.SetStateAction<File[]>>;
