@@ -2,6 +2,7 @@
 import classNames from "classnames";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Reveal from "./Reveal";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,38 +48,39 @@ function NavBar() {
           className="hidden dark:block"
         />
       </button>
-
-      <nav
-        className={classNames(
-          "bg-background card-shadow p-3 duration-300 ease-in-out rounded md:block",
-          {
-            "opacity-100 visible pointer-events-auto": isOpen,
-            "opacity-0 md:opacity-100": !isOpen,
-          }
-        )}
-      >
-        <ul className="flex flex-col gap-4 items-center text-lg font-normal md:flex-row whitespace-nowrap">
-          {sections.map(({ id, label }) => (
-            <li key={id}>
-              <div
-                onClick={() => {
-                  scrollToSection(id);
-                  setActiveSection(id);
-                  setIsOpen(false);
-                }}
-                className={classNames(
-                  "rounded p-1 cursor-pointer duration-300 ease-in-out",
-                  {
-                    "bg-[var(--primary)] text-white": activeSection === id,
-                  }
-                )}
-              >
-                {label}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Reveal initialY={-20} duration={0.5}>
+        <nav
+          className={classNames(
+            "bg-background card-shadow p-3 duration-300 ease-in-out rounded md:block",
+            {
+              "opacity-100 visible pointer-events-auto": isOpen,
+              "opacity-0 md:opacity-100": !isOpen,
+            }
+          )}
+        >
+          <ul className="flex flex-col gap-4 items-center text-lg font-normal md:flex-row whitespace-nowrap">
+            {sections.map(({ id, label }) => (
+              <li key={id}>
+                <div
+                  onClick={() => {
+                    scrollToSection(id);
+                    setActiveSection(id);
+                    setIsOpen(false);
+                  }}
+                  className={classNames(
+                    "rounded p-1 cursor-pointer duration-300 ease-in-out",
+                    {
+                      "bg-[var(--primary)] text-white": activeSection === id,
+                    }
+                  )}
+                >
+                  {label}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </Reveal>
     </div>
   );
 }
