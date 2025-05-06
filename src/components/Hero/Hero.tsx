@@ -1,16 +1,17 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import SocialBtn from "./SocialBtn";
 
 export default function Hero() {
   return (
     <section className="relative flex flex-col-reverse md:flex-row items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl w-full gap-8 md:gap-[137px] py-8 md:py-12 z-20">
       {/* Text Content */}
-      <div className="flex flex-col gap-1 md:gap-[34px] items-center md:items-start text-center md:text-start md:my-[58px]">
-        <div>
-          <h1 className="text-2xl mb-2.5 md:text-3xl  font-semibold  ">
+      <div className="flex flex-col gap-1 md:gap-[14px] items-center md:items-start text-center md:text-start md:my-[58px]">
+        <div className="">
+          <h1 className="text-2xl md:text-3xl  font-semibold  ">
             <span className="-ml-3">👋</span> Hello I'm Rahul Khan, I'm a
           </h1>
-          <p className="block text-[27px] sm:text-3xl md:text-4xl highlight mt-2.5 md:mt-0 bg-[var(--primary)] rounded-[4px]">
+          <p className=" text-[27px] sm:text-3xl md:text-4xl mt-1.5 text-white bg-[var(--primary)] rounded-[4px]">
             Frontend Developer
           </p>
         </div>
@@ -56,6 +57,7 @@ export default function Hero() {
           />
         </div>
       </div>
+      <SocialBtn />
     </section>
   );
 }
