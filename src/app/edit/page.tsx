@@ -1,3 +1,13 @@
+"use client";
+import DragDropPhotoUpload from "@/components/Edit/DragDropPhotoUpload";
+import React, { useState } from "react";
+
 export default function Edit() {
-  return <div className="container mx-auto">Edit</div>;
+  const [images, setImages] = useState<File[]>([]);
+  console.log(images);
+  return (
+    <div className="container mx-auto">
+      <DragDropPhotoUpload images={images} setImages={setImages} />
+    </div>
+  );
 }
