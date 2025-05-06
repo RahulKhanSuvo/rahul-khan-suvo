@@ -27,7 +27,7 @@ export default function SocialBtn() {
   ];
 
   return (
-    <div className="flex gap-4 items-center justify-center md:justify-start absolute bottom-0 left-1/2 transform -translate-x-1/2 ">
+    <div className="flex gap-4 items-center justify-center md:justify-start absolute -bottom-5 md:bottom-0 left-1/2 transform -translate-x-1/2 ">
       {socialLinks.map((link) => (
         <a
           key={link.name}
