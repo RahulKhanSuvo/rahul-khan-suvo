@@ -3,7 +3,6 @@ import SectionHeader from "../Section/SectionHeader";
 import skills from "@/data/skills.json";
 import Skill from "./Skill";
 import Image from "next/image";
-
 export default function Skills() {
   return (
     <SectionContainer id="skills">
