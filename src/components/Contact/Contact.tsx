@@ -32,7 +32,7 @@ export default function Contact() {
     <SectionContainer id="contact">
       <div className="w-full mx-[16px] relative">
         <SectionHeader highlightedText="Touch" plainText="Get In" />
-        <div className=" mb-9">
+        <div className=" my-10">
           <div className="card card-shadow p-6">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>

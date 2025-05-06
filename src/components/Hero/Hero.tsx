@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
 import SocialBtn from "./SocialBtn";
 import Reveal from "../Reveal";
+import { MdFileDownload } from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -24,9 +24,9 @@ export default function Hero() {
             download
             className="bg-[var(--primary)] text-white rounded-[4px] px-6 py-2 md:px-8 md:py-2 text-sm md:text-xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
           >
-            Get Resume{" "}
+            Resume{" "}
             <span>
-              <FaArrowRight />
+              <MdFileDownload />
             </span>
           </a>
         </Reveal>
