@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion, useMotionTemplate, useMotionValue } from "motion/react";
 import { useEffect, useRef } from "react";
+import Reveal from "../Reveal";
 export default function Skill({ name, icon }: { name: string; icon: string }) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -21,17 +22,19 @@ export default function Skill({ name, icon }: { name: string; icon: string }) {
     };
   }, []);
   return (
-    <div className="relative flex gap-2 p-2 border-[var(--primary)] border rounded-lg h-[46px]">
-      <motion.div
-        ref={ref}
-        className="absolute inset-0 border-2 border-purple-500 dark:border-purple-300 rounded-lg"
-        style={{
-          maskImage: mask,
-          WebkitMaskImage: mask,
-        }}
-      ></motion.div>
-      <Image width={20} height={20} src={icon} alt={`${name} icon`} />
-      <p className="text-lg">{name}</p>
-    </div>
+    <Reveal duration={1.5}>
+      <div className="relative flex gap-2 p-2 border-[var(--primary)] border rounded-lg h-[46px]">
+        <motion.div
+          ref={ref}
+          className="absolute inset-0 border-2 border-purple-500 dark:border-purple-300 rounded-lg"
+          style={{
+            maskImage: mask,
+            WebkitMaskImage: mask,
+          }}
+        ></motion.div>
+        <Image width={20} height={20} src={icon} alt={`${name} icon`} />
+        <p className="text-lg">{name}</p>
+      </div>
+    </Reveal>
   );
 }
