@@ -5,6 +5,7 @@ import SectionHeader from "../Section/SectionHeader";
 import { useForm } from "react-hook-form";
 import { motion } from "motion/react";
 import { FaPaperPlane } from "react-icons/fa";
+import ContactInfo from "./ContactInfo";
 
 type FormData = {
   name: string;
@@ -32,7 +33,7 @@ export default function Contact() {
     <SectionContainer id="contact">
       <div className="w-full mx-[16px] relative">
         <SectionHeader highlightedText="Touch" plainText="Get In" />
-        <div className=" my-10">
+        <div className="my-10 grid md:grid-cols-2 gap-12">
           <div className="card card-shadow p-6">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
@@ -127,7 +128,7 @@ export default function Contact() {
             </form>
           </div>
           {/* contact info */}
-          <div></div>
+          <ContactInfo />
         </div>
       </div>
     </SectionContainer>
