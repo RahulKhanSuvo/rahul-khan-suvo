@@ -5,6 +5,8 @@ import Reveal from "../Reveal";
 import { useMotionValue, useSpring, useTransform } from "motion/react";
 import { MouseEventHandler } from "react";
 import { motion } from "motion/react";
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 type ProjectProps = {
   thumbnail: string;
@@ -38,7 +40,7 @@ export default function Project({
     const xPos = (e.clientX - clientRect.left) / clientRect.width - 0.5;
     const yPos = (e.clientY - clientRect.top) / clientRect.height - 0.5;
     x.set(xPos);
-    y.set(yPos); // Fixed: Use yPos instead of xPos
+    y.set(yPos);
   };
 
   const handleMouseLeave = () => {
@@ -70,18 +72,23 @@ export default function Project({
             className="w-full rounded-md object-cover"
           />
         </div>
-        <div className="flex flex-col gap-[11px]">
+        <div
+          className="flex flex-col gap-[11px]"
+          style={{ transform: "translateZ(50px)" }}
+        >
           <div className="flex justify-between items-center">
             <h3 className="font-semibold text-xl md:text-[22px]">{title}</h3>
-            <a
+            <motion.a
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
               className="flex px-[5px] py-[3px] gap-1 bg-[#b9b9b93d] items-center rounded text-[14px]"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <span className="hidden md:block">{link.label}</span>
               <MdArrowOutward />
-            </a>
+            </motion.a>
           </div>
           <p className="line-clamp-2 text-sm md:text-base">{description}</p>
           <div className="flex flex-row gap-[11px]">
@@ -94,6 +101,27 @@ export default function Project({
                 height={20}
               />
             ))}
+          </div>
+          <div className=" rounded-xl flex gap-4">
+            <a
+              href="https://github.com/your-repo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+            >
+              <FaGithub />
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="https://your-website.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+            >
+              <TbWorld />
+              <span>Live</span>
+            </a>
           </div>
         </div>
       </motion.div>
