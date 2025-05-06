@@ -20,13 +20,15 @@ export default function Project({
 }: ProjectProps) {
   return (
     <div className="flex flex-col items-stretch w-full max-w-[428.4px] p-5 md:p-[18px] gap-[30px] card-shadow card">
-      <Image
-        src={thumbnail}
-        width={392}
-        height={230}
-        alt="Project Thumbnail"
-        className="w-full rounded-md object-cover"
-      />
+      <div className=" rounded-md border-gray-200 border-[0.2px]">
+        <Image
+          src={thumbnail}
+          width={392}
+          height={230}
+          alt="Project Thumbnail"
+          className="w-full  rounded-md object-cover"
+        />
+      </div>
       <div className="flex flex-col gap-[11px]">
         <div className="flex justify-between items-center">
           <h3 className="font-semibold text-xl md:text-[22px]">{title}</h3>
