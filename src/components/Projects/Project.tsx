@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { MdArrowOutward } from "react-icons/md";
 import { useMotionValue, useSpring, useTransform } from "motion/react";
 import { MouseEventHandler } from "react";
 import { motion } from "motion/react";
