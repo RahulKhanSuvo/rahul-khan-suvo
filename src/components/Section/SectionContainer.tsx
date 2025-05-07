@@ -6,7 +6,10 @@ export default function SectionContainer({
   id: string;
 }) {
   return (
-    <section id={id} className="w-full relative flex justify-center z-30">
+    <section
+      id={id}
+      className="w-full relative flex justify-center z-30 scroll-m-[100px]"
+    >
       {children}
     </section>
   );
