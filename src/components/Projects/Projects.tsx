@@ -10,10 +10,11 @@ export default function Projects() {
       <div className=" w-full mx-[22px] md:mx-[16px] ">
         <SectionHeader plainText="👌Some of my" highlightedText="Best Works" />
         <div className="lg:w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-10">
-          {projects.map((project, id) => (
+          {projects.map((project) => (
             <Project
-              key={id}
-              thumbnail={project.thumbnail}
+              key={project.id}
+              id={project.id}
+              thumbnail={project.thumbnail[0]}
               title={project.title}
               link={project.link}
               description={project.description}

@@ -6,19 +6,24 @@ import { MouseEventHandler } from "react";
 import { motion } from "motion/react";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
+import Link from "next/link";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 type ProjectProps = {
+  id: number;
   thumbnail: string;
   title: string;
   link: {
     url: string;
     label: string;
+    githubLink: string;
   };
   description: string;
   languageIcons: string[];
 };
 
 export default function Project({
+  id,
   thumbnail,
   title,
   link,
@@ -64,7 +69,7 @@ export default function Project({
     >
       <div
         style={{ transform: "translateZ(100px)" }}
-        className="rounded-md border-gray-200 border-[0.2px]"
+        className="rounded-md border-gray-200 border-[0.2px] w-full"
       >
         <Image
           src={thumbnail}
@@ -80,7 +85,7 @@ export default function Project({
       >
         <div className="flex justify-between items-center">
           <h3 className="font-semibold text-xl md:text-[22px]">{title}</h3>
-          <motion.a
+          {/* <motion.a
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
@@ -90,7 +95,7 @@ export default function Project({
           >
             <span className="hidden md:block">{link.label}</span>
             <MdArrowOutward />
-          </motion.a>
+          </motion.a> */}
         </div>
         <p className="line-clamp-2 text-sm md:text-base">{description}</p>
         <div className="flex flex-row gap-[11px]">
@@ -104,9 +109,9 @@ export default function Project({
             />
           ))}
         </div>
-        <div className=" rounded-xl flex gap-4">
+        <div className=" w-full rounded-xl flex justify-between">
           <a
-            href="https://github.com/your-repo"
+            href={link.githubLink}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
@@ -114,9 +119,15 @@ export default function Project({
             <FaGithub />
             <span>GitHub</span>
           </a>
-
+          <Link
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+            href={`/project/${id}`}
+          >
+            <FaArrowUpRightFromSquare />
+            <span>Details</span>
+          </Link>
           <a
-            href="https://your-website.com"
+            href={link.url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
