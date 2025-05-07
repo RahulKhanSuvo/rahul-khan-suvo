@@ -67,14 +67,15 @@ function NavBar() {
                     setActiveSection(id);
                     setIsOpen(false);
                   }}
-                  className="p-1  cursor-pointer duration-3000 ease-in-out"
+                  className={`p-1  cursor-pointer  ${
+                    activeSection === id && "text-white"
+                  }`}
                 >
                   {activeSection === id && (
                     <motion.div
                       layoutId="active-pill"
-                      transition={{ duration: 0.2 }}
                       style={{ borderRadius: 4 }}
-                      className="absolute  inset-0 bg-[var(--primary)] text-white"
+                      className="absolute  inset-0 bg-[var(--primary)] "
                     ></motion.div>
                   )}
                   <span className="relative z-10"> {label}</span>
