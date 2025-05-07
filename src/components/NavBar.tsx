@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
-
+import { motion } from "motion/react";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -58,9 +58,9 @@ function NavBar() {
             }
           )}
         >
-          <ul className="flex flex-col gap-4 items-center text-lg font-normal md:flex-row whitespace-nowrap">
+          <ul className="flex flex-col  gap-4 items-center text-lg font-normal md:flex-row whitespace-nowrap">
             {sections.map(({ id, label }) => (
-              <li key={id}>
+              <li className="relative" key={id}>
                 <div
                   onClick={() => {
                     scrollToSection(id);
@@ -68,13 +68,16 @@ function NavBar() {
                     setIsOpen(false);
                   }}
                   className={classNames(
-                    "rounded p-1 cursor-pointer duration-300 ease-in-out",
-                    {
-                      "bg-[var(--primary)] text-white": activeSection === id,
-                    }
+                    " p-1  cursor-pointer duration-3000 ease-in-out"
                   )}
                 >
-                  {label}
+                  {activeSection === id && (
+                    <motion.div
+                      layoutId="active-pill"
+                      className="absolute rounded inset-0 bg-[var(--primary)] text-white"
+                    ></motion.div>
+                  )}
+                  <span className="relative"> {label}</span>
                 </div>
               </li>
             ))}

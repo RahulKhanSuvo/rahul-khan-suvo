@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
-import Reveal from "../Reveal";
 import { useMotionValue, useSpring, useTransform } from "motion/react";
 import { MouseEventHandler } from "react";
 import { motion } from "motion/react";
@@ -49,82 +48,84 @@ export default function Project({
   };
 
   return (
-    <Reveal initialX={-50} delay={0.5}>
-      <motion.div
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          transformStyle: "preserve-3d",
-          rotateX: xRotation,
-          rotateY: yRotation,
-        }}
-        className="flex flex-col items-stretch w-full  p-5 md:p-[18px] gap-[30px] card-shadow card"
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        transformStyle: "preserve-3d",
+        rotateX: xRotation,
+        rotateY: yRotation,
+      }}
+      className="flex flex-col items-stretch w-full  p-5 md:p-[18px] gap-[30px] card-shadow card"
+    >
+      <div
+        style={{ transform: "translateZ(100px)" }}
+        className="rounded-md border-gray-200 border-[0.2px]"
       >
-        <div
-          style={{ transform: "translateZ(100px)" }}
-          className="rounded-md border-gray-200 border-[0.2px]"
-        >
-          <Image
-            src={thumbnail}
-            width={392}
-            height={230}
-            alt="Project Thumbnail"
-            className="w-full rounded-md object-cover"
-          />
+        <Image
+          src={thumbnail}
+          width={392}
+          height={230}
+          alt="Project Thumbnail"
+          className="w-full rounded-md object-cover"
+        />
+      </div>
+      <div
+        className="flex flex-col gap-[11px]"
+        style={{ transform: "translateZ(50px)" }}
+      >
+        <div className="flex justify-between items-center">
+          <h3 className="font-semibold text-xl md:text-[22px]">{title}</h3>
+          <motion.a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex px-[5px] py-[3px] gap-1 bg-[#b9b9b93d] items-center rounded text-[14px]"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="hidden md:block">{link.label}</span>
+            <MdArrowOutward />
+          </motion.a>
         </div>
-        <div
-          className="flex flex-col gap-[11px]"
-          style={{ transform: "translateZ(50px)" }}
-        >
-          <div className="flex justify-between items-center">
-            <h3 className="font-semibold text-xl md:text-[22px]">{title}</h3>
-            <motion.a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex px-[5px] py-[3px] gap-1 bg-[#b9b9b93d] items-center rounded text-[14px]"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span className="hidden md:block">{link.label}</span>
-              <MdArrowOutward />
-            </motion.a>
-          </div>
-          <p className="line-clamp-2 text-sm md:text-base">{description}</p>
-          <div className="flex flex-row gap-[11px]">
-            {languageIcons.map((icon, iconId) => (
-              <Image
-                key={iconId}
-                src={icon}
-                alt="language icon"
-                width={20}
-                height={20}
-              />
-            ))}
-          </div>
-          <div className=" rounded-xl flex gap-4">
-            <a
-              href="https://github.com/your-repo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
-            >
-              <FaGithub />
-              <span>GitHub</span>
-            </a>
+        <p className="line-clamp-2 text-sm md:text-base">{description}</p>
+        <div className="flex flex-row gap-[11px]">
+          {languageIcons.map((icon, iconId) => (
+            <Image
+              key={iconId}
+              src={icon}
+              alt="language icon"
+              width={20}
+              height={20}
+            />
+          ))}
+        </div>
+        <div className=" rounded-xl flex gap-4">
+          <a
+            href="https://github.com/your-repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+          >
+            <FaGithub />
+            <span>GitHub</span>
+          </a>
 
-            <a
-              href="https://your-website.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
-            >
-              <TbWorld />
-              <span>Live</span>
-            </a>
-          </div>
+          <a
+            href="https://your-website.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+          >
+            <TbWorld />
+            <span>Live</span>
+          </a>
         </div>
-      </motion.div>
-    </Reveal>
+      </div>
+    </motion.div>
   );
 }
