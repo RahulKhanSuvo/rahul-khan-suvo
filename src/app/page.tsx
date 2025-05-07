@@ -1,3 +1,4 @@
+import ScrollProgressBar from "@/components/Animation/ScrollProgressBar";
 import TopBackground from "@/components/Hero/TopBackground";
 import NavBar from "@/components/NavBar";
 import Sections from "@/components/Sections";
@@ -7,6 +8,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="relative overflow-clip" id="home">
+      <ScrollProgressBar />
       <NavBar />
       <ThemeToggle />
       <Sections />

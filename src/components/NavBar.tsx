@@ -67,7 +67,7 @@ function NavBar() {
                     setActiveSection(id);
                     setIsOpen(false);
                   }}
-                  className="p-1  cursor-pointer duration-3000 ease-in-out "
+                  className="p-1  cursor-pointer duration-3000 ease-in-out"
                 >
                   {activeSection === id && (
                     <motion.div
