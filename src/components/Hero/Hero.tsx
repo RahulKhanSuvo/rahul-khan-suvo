@@ -11,7 +11,8 @@ export default function Hero() {
         <Reaving>
           <div className="">
             <h1 className="text-2xl md:text-3xl  font-semibold  ">
-              <span className="-ml-3">👋</span> Hello I'm Rahul Khan, I'm a
+              <span className="-ml-3">👋</span> Hello I&apos;m Rahul Khan,
+              I&apos;m a
             </h1>
 
             <p className=" text-[27px] sm:text-3xl md:text-4xl mt-1.5 text-white bg-[var(--primary)] rounded-[4px]">

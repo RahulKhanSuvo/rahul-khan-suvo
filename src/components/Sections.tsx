@@ -2,7 +2,6 @@ import Contact from "./Contact/Contact";
 import Hero from "./Hero/Hero";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
-import skills from "@/data/skills.json";
 
 export default function Sections() {
   return (
