@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { motion } from "motion/react";
 import { FaPaperPlane } from "react-icons/fa";
 import ContactInfo from "./ContactInfo";
+import axios from "axios";
 
 type FormData = {
   name: string;
@@ -22,11 +23,14 @@ export default function Contact() {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log(data);
-    // Here you would typically send the data to your backend
-    reset();
+    try {
+      const res = await axios.post("api/message", { ...data });
+      reset();
+    } catch (error) {
+    } finally {
+    }
   };
 
   return (

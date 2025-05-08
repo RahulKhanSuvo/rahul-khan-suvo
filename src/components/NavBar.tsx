@@ -53,8 +53,8 @@ function NavBar() {
           className={classNames(
             "bg-background card-shadow p-3 duration-300 ease-in-out rounded md:block",
             {
-              "opacity-100 visible pointer-events-auto": isOpen,
-              "opacity-0 md:opacity-100": !isOpen,
+              " visible pointer-events-auto": isOpen,
+              "hidden md:opacity-100": !isOpen,
             }
           )}
         >
