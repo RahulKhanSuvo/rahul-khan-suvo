@@ -25,7 +25,7 @@ export default function Hero() {
           <a
             href="/resume.pdf"
             download
-            className="bg-[var(--primary)] text-white rounded-[4px] px-6 py-2 md:px-8 md:py-2 text-sm md:text-xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
+            className="bg-[var(--primary)] text-white rounded-[4px] px-6 py-2 md:px-8 md:py-2 text-[27px] sm:text-3xl md:text-4xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
           >
             Resume{" "}
             <span>
