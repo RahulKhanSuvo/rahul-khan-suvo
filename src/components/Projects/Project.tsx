@@ -68,14 +68,14 @@ export default function Project({
     >
       <div
         style={{ transform: "translateZ(100px)" }}
-        className="rounded-md border-gray-200 border-[0.2px] w-full"
+        className="rounded-md  border-gray-200 border-[0.2px] aspect-[16/9] w-full"
       >
         <Image
           src={thumbnail}
           width={392}
-          height={230}
+          height={280}
           alt="Project Thumbnail"
-          className="w-full rounded-md object-cover"
+          className="w-full md:h-[280px] rounded-md object-cover"
         />
       </div>
       <div

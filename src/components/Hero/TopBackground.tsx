@@ -29,9 +29,9 @@ export default function TopBackground() {
       name: "Next.js",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       alt: "Next.js icon",
-      position: "top-70 left-[270px] md:top-80 md:left-[82%]",
+      position: "top-70 left-[270px] md:top-70 md:left-[56%]",
       animation: {
-        scale: [1, 1.1, 1],
+        scale: [1, 1.3, 1],
         transition: { duration: 4, repeat: Infinity },
       },
     },
@@ -82,8 +82,8 @@ export default function TopBackground() {
       alt: "GraphQL icon",
       position: "top-[180px] left-[150px] md:top-[500px] md:left-[60%]",
       animation: {
-        rotate: [0, 100, -100],
-        transition: { duration: 12, repeat: Infinity },
+        scale: [1, 1.1, 1],
+        transition: { duration: 4, repeat: Infinity },
       },
     },
   ];
