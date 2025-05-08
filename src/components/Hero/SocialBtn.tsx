@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
+import { motion } from "motion/react";
 import { IoLogoGithub } from "react-icons/io";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
-export default function SocialBtn() {
+export default function SocialButtons() {
   const socialLinks = [
     {
       name: "GitHub",
@@ -26,20 +28,59 @@ export default function SocialBtn() {
     },
   ];
 
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+      },
+    },
+    hover: {
+      y: -5,
+      scale: 1.1,
+      transition: { duration: 0.2 },
+    },
+    tap: {
+      scale: 0.95,
+    },
+  };
+
   return (
-    <div className="flex gap-4 items-center justify-center md:justify-start absolute -bottom-5 md:bottom-0 left-1/2 transform -translate-x-1/2 ">
+    <motion.div
+      className="flex gap-4 items-center justify-center md:justify-start absolute -bottom-5 md:bottom-0 left-1/2 transform -translate-x-1/2"
+      variants={container}
+      initial="hidden"
+      animate="visible"
+    >
       {socialLinks.map((link) => (
-        <a
+        <motion.a
           key={link.name}
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[var(--primary)] text-white rounded-full p-2.5 transition-all hover:scale-110 duration-300"
+          className="text-white bg-[var(--primary)] rounded-full p-2.5 transition-colors duration-300"
           aria-label={`Visit my ${link.name} profile`}
+          variants={item}
+          whileHover="hover"
+          whileTap="tap"
         >
           {link.icon}
-        </a>
+        </motion.a>
       ))}
-    </div>
+    </motion.div>
   );
 }

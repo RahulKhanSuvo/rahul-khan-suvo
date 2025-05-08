@@ -2,6 +2,7 @@ import Image from "next/image";
 import SocialBtn from "./SocialBtn";
 import { MdFileDownload } from "react-icons/md";
 import Reaving from "../Animation/Reaving";
+import { IntroSection } from "./IntroSection";
 
 export default function Hero() {
   return (
@@ -9,23 +10,14 @@ export default function Hero() {
       {/* Text Content */}
       <div className="flex flex-col gap-1 md:gap-[14px] items-center md:items-start text-center md:text-start md:my-[58px]">
         <Reaving>
-          <div className="">
-            <h1 className="text-2xl md:text-3xl  font-semibold  ">
-              <span className="-ml-3">👋</span> Hello I&apos;m Rahul Khan,
-              I&apos;m a
-            </h1>
-
-            <p className=" text-[27px] sm:text-3xl md:text-4xl mt-1.5 text-white bg-[var(--primary)] rounded-[4px]">
-              Frontend Developer
-            </p>
-          </div>
+          <IntroSection name="Rahul Khan" title="Frontend Developer" />
         </Reaving>
 
         <Reaving>
           <a
             href="/resume.pdf"
             download
-            className="bg-[var(--primary)] text-white rounded-[4px] px-6 py-2 md:px-8 md:py-2 text-[27px] sm:text-3xl md:text-4xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
+            className="bg-[var(--primary)] text-white rounded-[4px] px-4 py-2 md:px-8 md:py-2   md:text-4xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
           >
             Resume{" "}
             <span>
