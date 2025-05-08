@@ -3,8 +3,14 @@ import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import projects from "@/data/projects.json";
 
-export default function ProjectDetails({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === Number(params.id));
+export default async function ProjectDetails({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const resolve = await params;
+  const { id } = resolve;
+  const project = projects.find((p) => p.id === Number(id));
 
   if (!project) return <div className="p-6 text-center">Project not found</div>;
 
