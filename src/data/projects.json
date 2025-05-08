@@ -88,8 +88,8 @@
     "title": "Carola",
     "link": {
       "label": "Carola.com",
-      "url": "https://car-portal-rahul-khan-suvo.netlify.app",
-      "githubLink": "https://github.com/RahulKhanSuvo/asset-panda-client"
+      "url": "https://car-portal-rahul-khan-suvo.netlify.app/",
+      "githubLink": "https://github.com/RahulKhanSuvo/carRental"
     },
     "description": "Carola is an intuitive car rental application that allows users to easily browse, book, and manage rentals.",
     "languageIcons": [
