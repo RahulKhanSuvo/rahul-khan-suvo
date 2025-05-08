@@ -37,81 +37,88 @@
             "Enhance the mobile app version for better accessibility."
         ]
     },
-    {   "id":2,
-        "thumbnail":["https://i.ibb.co.com/0RKcNDz9/screencapture-asset-panda-rahul-khan-suvo-netlify-app-dashboard-hr-Home-2025-05-08-00-56-04.png", "https://i.ibb.co.com/v604ZmBT/Screenshot-2025-05-08-005829.png","https://i.ibb.co.com/Sw8kzqW2/screencapture-asset-panda-rahul-khan-suvo-netlify-app-login-2025-05-08-00-56-43.png"],
-        "title": "Asset-Panda",
-        "link": {
-            "label": "Asset-Panda.com",
-            "url": "https://asset-panda-rahul-khan-suvo.netlify.app/",
-        "githubLink":"https://github.com/RahulKhanSuvo/asset-panda-client"
-        },
-        "description": "AssetPanda is a web-based platform designed to help manage assets within a company, track employee asset requests, and provide a smooth experience for both employees and administrators.",
-        "languageIcons": [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-
-        ],
-        "keyFeatures": [
-            "Direct marketplace for farmers to sell products.",
-            "Integrated pest detection tool.",
-            "Farmer Resource Center with expert advice.",
-            "Community forum for farmer discussions.",
-            "Integrated order management dashboard."
-        ],
-        "challengesFaced": [
-            "Integration of the pest detection tool with limited resources.",
-            "Ensuring seamless real-time communication in the community forum.",
-            "Dealing with the complexity of building a user-friendly dashboard for farmers.",
-            "Ensuring mobile responsiveness across different devices."
-        ],
-        "futurePlans": [
-            "Expand the platform to include more agricultural tools.",
-            "Integrate AI-driven crop suggestions based on weather and market trends.",
-            "Add more payment methods for easier transactions.",
-            "Enhance the mobile app version for better accessibility."
-        ]
+   {
+    "id": 2,
+    "thumbnail": [
+      "https://i.ibb.co.com/0RKcNDz9/screencapture-asset-panda-rahul-khan-suvo-netlify-app-dashboard-hr-Home-2025-05-08-00-56-04.png",
+      "https://i.ibb.co.com/v604ZmBT/Screenshot-2025-05-08-005829.png",
+      "https://i.ibb.co.com/Sw8kzqW2/screencapture-asset-panda-rahul-khan-suvo-netlify-app-login-2025-05-08-00-56-43.png"
+    ],
+    "title": "Asset-Panda",
+    "link": {
+      "label": "Asset-Panda.com",
+      "url": "https://asset-panda-rahul-khan-suvo.netlify.app/",
+      "githubLink": "https://github.com/RahulKhanSuvo/asset-panda-client"
     },
-    {   "id":3,
-        "thumbnail":["https://i.ibb.co.com/8n8JD4MB/car-portal-rahul-khan-suvo-netlifygrid.png","https://i.ibb.co.com/tMyyfLwv/car-portal-rahul-khan-suvo-netlify-app-1.png"],
-        "title": "Carola",
-        "link": {
-            "label": "Carola.com",
-            "url": "https://car-portal-rahul-khan-suvo.netlify.app",
-        "githubLink":"https://github.com/RahulKhanSuvo/asset-panda-client"
-        },
-        "description": "Carola is an intuitive car rental application that allows users to easily browse, book, and manage rentals.",
-        "languageIcons": [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-
-        ],
-        "keyFeatures": [
-            "Direct marketplace for farmers to sell products.",
-            "Integrated pest detection tool.",
-            "Farmer Resource Center with expert advice.",
-            "Community forum for farmer discussions.",
-            "Integrated order management dashboard."
-        ],
-        "challengesFaced": [
-            "Integration of the pest detection tool with limited resources.",
-            "Ensuring seamless real-time communication in the community forum.",
-            "Dealing with the complexity of building a user-friendly dashboard for farmers.",
-            "Ensuring mobile responsiveness across different devices."
-        ],
-        "futurePlans": [
-            "Expand the platform to include more agricultural tools.",
-            "Integrate AI-driven crop suggestions based on weather and market trends.",
-            "Add more payment methods for easier transactions.",
-            "Enhance the mobile app version for better accessibility."
-        ]
-    }
+    "description": "AssetPanda is a web-based platform designed to help manage assets within a company, track employee asset requests, and provide a smooth experience for both employees and administrators.",
+    "languageIcons": [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+    ],
+    "keyFeatures": [
+      "Customizable asset tracking with barcode scanning and mobile access.",
+      "Role-based permissions and unlimited user support.",
+      "Real-time asset visibility with GPS coordinates.",
+      "Integration with tools like Google Sheets, Gmail, and Microsoft Teams.",
+      "Audit reports and maintenance scheduling features."
+    ],
+    "challengesFaced": [
+      "Occasional slowness and complex navigation.",
+      "Limited integration with some third-party tools.",
+      "Data import processes can be time-consuming.",
+      "Mobile app lacks offline mode."
+    ],
+    "futurePlans": [
+      "Enhance mobile app with offline capabilities.",
+      "Expand integration options with popular third-party tools.",
+      "Improve data import processes for large datasets.",
+      "Optimize user interface for better navigation."
+    ]
+  },
+  {
+    "id": 3,
+    "thumbnail": [
+      "https://i.ibb.co.com/8n8JD4MB/car-portal-rahul-khan-suvo-netlifygrid.png",
+      "https://i.ibb.co.com/tMyyfLwv/car-portal-rahul-khan-suvo-netlify-app-1.png"
+    ],
+    "title": "Carola",
+    "link": {
+      "label": "Carola.com",
+      "url": "https://car-portal-rahul-khan-suvo.netlify.app",
+      "githubLink": "https://github.com/RahulKhanSuvo/asset-panda-client"
+    },
+    "description": "Carola is an intuitive car rental application that allows users to easily browse, book, and manage rentals.",
+    "languageIcons": [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+    ],
+    "keyFeatures": [
+      "User-friendly car rental booking system.",
+      "Real-time vehicle availability and booking management.",
+      "Secure payment processing.",
+      "Responsive design for mobile and desktop users.",
+      "Admin dashboard for managing listings and reservations."
+    ],
+    "challengesFaced": [
+      "Ensuring seamless user experience across devices.",
+      "Integrating secure and reliable payment gateways.",
+      "Managing real-time updates for vehicle availability.",
+      "Implementing robust authentication for users."
+    ],
+    "futurePlans": [
+      "Introduce keyless access using smartphone integration.",
+      "Implement AI-driven recommendations for users.",
+      "Expand to include peer-to-peer car sharing features.",
+      "Enhance security measures for user data protection."
+    ]
+  }
     
 ]
