@@ -74,7 +74,7 @@ export default function ContactInfo() {
         <h4 className="font-medium  mb-3">Connect With Me</h4>
         <div className="flex gap-4">
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://www.facebook.com/rahul.khan.suvo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -83,7 +83,7 @@ export default function ContactInfo() {
             <FaFacebook size={24} />
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="http://www.linkedin.com/in/rahul-khan-suvo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -92,7 +92,7 @@ export default function ContactInfo() {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/RahulKhanSuvo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -101,7 +101,7 @@ export default function ContactInfo() {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://wa.me/1234567890"
+            href="https://api.whatsapp.com/send/?phone=%2B8801609553810&text&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-500 transition-colors"
