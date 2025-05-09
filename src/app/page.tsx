@@ -9,7 +9,6 @@ export default function Home() {
     <div className="relative overflow-clip" id="home">
       <ScrollProgressBar />
       <NavBar />
-
       <Sections />
       <TopBackground />
       <Image

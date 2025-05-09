@@ -3,7 +3,6 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function TopBackground() {
-  // Tech icons with animation configurations
   const techIcons = [
     {
       name: "React",
@@ -106,8 +105,6 @@ export default function TopBackground() {
           ))}
         </div>
       </div>
-
-      {/* Background elements remain the same */}
       <div className="absolute top-[-315px] left-1/2  -translate-x-1/2 z-0 hidden dark:md:block">
         <Image
           width={809}
@@ -124,8 +121,6 @@ export default function TopBackground() {
           alt="dark mode highlighter for mobile"
         />
       </div>
-
-      {/* Grid backgrounds remain the same */}
       <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_light.svg')] bg-[auto_auto] hidden dark:hidden md:block"></div>
       <div className="absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mobile_light.svg')] bg-[auto_auto] dark:hidden"></div>
       <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_dark.svg')] bg-[auto_auto] hidden dark:md:block"></div>

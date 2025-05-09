@@ -3,6 +3,7 @@ import SocialBtn from "./SocialBtn";
 import { MdFileDownload } from "react-icons/md";
 import Reaving from "../Animation/Reaving";
 import { IntroSection } from "./IntroSection";
+import ImageAnimating from "../Animation/ImageAnimating";
 
 export default function Hero() {
   return (
@@ -29,7 +30,6 @@ export default function Hero() {
 
       {/* Image Container */}
       <div className="relative w-full max-w-xs sm:max-w-md md:w-auto">
-        {/* Mobile Image (shown on small screens) */}
         <Image
           src={"/profile.jpg"}
           alt="Profile picture of Rahul Khan"
@@ -38,32 +38,32 @@ export default function Hero() {
           className="md:hidden w-full h-auto rounded-2xl  shadow-lg mx-auto"
           priority
         />
+        <ImageAnimating>
+          <div className="hidden md:flex items-center justify-center group  w-full h-auto">
+            <Image
+              src={"/profile_light_purple.png"}
+              alt="Decorative background"
+              height={430}
+              width={375}
+              className="w-[370px] h-[430px] absolute right-0 -z-10 group-hover:scale-[102%] group-hover:-rotate-3 ease-in-out duration-300"
+            />
+            <Image
+              src={"/profile_dark_purple.png"}
+              alt="Decorative background"
+              height={430}
+              width={372}
+              className="w-[370px] h-[430px] absolute right-2 -z-10 group-hover:scale-[102%] group-hover:rotate-3 ease-in-out duration-300"
+            />
 
-        {/* Desktop Image with background (shown on medium screens and up) */}
-
-        <div className="hidden md:flex items-center justify-center group  w-full h-auto">
-          <Image
-            src={"/profile_light_purple.png"}
-            alt="Decorative background"
-            height={430}
-            width={372}
-            className="w-[372px] h-[430px] absolute right-0 -z-10 group-hover:scale-[102%] group-hover:-rotate-2 ease-in-out duration-300"
-          />
-          <Image
-            src={"/profile_dark_purple.png"}
-            alt="Decorative background"
-            height={430}
-            width={372}
-            className="w-[372px] h-[430px] absolute right-0 -z-10 group-hover:scale-[102%] group-hover:rotate-2 ease-in-out duration-300"
-          />
-          <Image
-            src={"/profile.jpg"}
-            alt="Profile picture of Rahul Khan"
-            height={417}
-            width={357}
-            className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-2xl  border-white shadow-lg group-hover:scale-[102%]  ease-in-out duration-300"
-          />
-        </div>
+            <Image
+              src={"/profile.jpg"}
+              alt="Profile picture of Rahul Khan"
+              height={417}
+              width={357}
+              className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-2xl  border-white shadow-lg group-hover:scale-[102%] ease-in-out duration-300"
+            />
+          </div>
+        </ImageAnimating>
       </div>
       <SocialBtn />
     </section>
