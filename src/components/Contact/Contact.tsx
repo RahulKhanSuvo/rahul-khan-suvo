@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import { FaPaperPlane } from "react-icons/fa";
 import ContactInfo from "./ContactInfo";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 type FormData = {
   name: string;
@@ -23,13 +24,13 @@ export default function Contact() {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log(data);
     try {
-      const res = await axios.post("api/message", { ...data });
+      await axios.post("api/message", { ...data });
+      toast.success("Message sent successfully!");
       reset();
     } catch (error) {
-    } finally {
+      toast.error("Something went wrong. Please try again.");
+      console.error(error);
     }
   };
 
