@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Toaster } from "react-hot-toast";
+import ScrollProgressBar from "@/components/Animation/ScrollProgressBar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased `}>
+        <ScrollProgressBar />
         <Toaster
           position="top-center"
           toastOptions={{

@@ -31,21 +31,20 @@ export default function PhotoSlider({ thumbnails }: PhotoSliderProps) {
 
   return (
     <div className="relative w-full">
-      {/* Custom Navigation Buttons */}
       <button
         ref={prevRef}
-        className={`absolute top-1/2 left-4 z-20 -translate-y-1/2 rounded-full p-3 transition-all duration-300  group-hover:opacity-100 bg-white/80 hover:bg-white shadow-lg hover:shadow-xl`}
+        className={`absolute top-1/2 left-1 md:left-4 z-20 -translate-y-1/2 rounded-full md:p-2 lg:p-3 transition-all duration-300  group-hover:opacity-100 bg-white/80 hover:bg-white shadow-lg hover:shadow-xl`}
         aria-label="Previous slide"
       >
-        <IoIosArrowBack className="w-6 h-6 text-gray-800" />
+        <IoIosArrowBack className="md:size-4 lg:size-6 text-gray-800" />
       </button>
 
       <button
         ref={nextRef}
-        className={`absolute top-1/2 right-4 z-20 -translate-y-1/2 rounded-full p-3 transition-all duration-300  group-hover:opacity-100 bg-white/80 hover:bg-white shadow-lg hover:shadow-xl`}
+        className={`absolute top-1/2 right-1 md:right-4 z-20 -translate-y-1/2 rounded-full md:p-2 lg:p-3 transition-all duration-300  group-hover:opacity-100 bg-white/80 hover:bg-white shadow-lg hover:shadow-xl`}
         aria-label="Next slide"
       >
-        <IoIosArrowForward className="w-6 h-6 text-gray-800" />
+        <IoIosArrowForward className="md:size-4 lg:size-6 text-gray-800" />
       </button>
 
       <Swiper
