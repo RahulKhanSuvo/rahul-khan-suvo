@@ -27,9 +27,10 @@ export const POST = async (req: NextRequest) => {
         const info = await transporter.sendMail(mailOptions);
         console.log("Message sent: %s", info.messageId);
 
-        return NextResponse.json({ success: true });
+        return NextResponse.json({ success: true }, { status: 200 });
 
     } catch (error) {
-
+        console.error("Email send error:", error);
+        return NextResponse.json({ error: "Email failed to send" }, { status: 500 });
     }
 }
