@@ -9,6 +9,7 @@ import {
   Mousewheel,
   Keyboard,
   Autoplay,
+  FreeMode,
 } from "swiper/modules";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
@@ -62,7 +63,14 @@ export default function PhotoSlider({ thumbnails }: PhotoSliderProps) {
         mousewheel={true}
         keyboard={true}
         spaceBetween={50}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+        modules={[
+          Navigation,
+          Pagination,
+          Mousewheel,
+          Keyboard,
+          Autoplay,
+          FreeMode,
+        ]}
         className="mySwiper"
       >
         {thumbnails.map((thumbnail, index) => (
