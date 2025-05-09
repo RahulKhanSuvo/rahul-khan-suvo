@@ -16,7 +16,7 @@ export default function Hero() {
 
         <Reaving>
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/uc?export=download&id=1-j0laNGiXknvDWZ3RnZbsfp4CRcYquNC"
             download
             className="bg-[var(--primary)] text-white rounded-[4px] px-4 py-2 md:px-8 md:py-2   md:text-4xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
           >
