@@ -60,12 +60,12 @@
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
     ],
     "keyFeatures": [
-      "Customizable asset tracking with barcode scanning and mobile access.",
-      "Role-based permissions and unlimited user support.",
-      "Real-time asset visibility with GPS coordinates.",
-      "Integration with tools like Google Sheets, Gmail, and Microsoft Teams.",
-      "Audit reports and maintenance scheduling features."
-    ],
+  "HR can manage all office assets, and employees can send asset requests directly to HR.",
+  "Dedicated dashboard for HR to track and manage assets efficiently.",
+  "Role-based permissions and unlimited user support.",
+  "Employees can join and collaborate within teams."
+]
+,
     "challengesFaced": [
       "Occasional slowness and complex navigation.",
       "Limited integration with some third-party tools.",
