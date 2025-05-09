@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import projects from "@/data/projects.json";
+import PhotoSlider from "@/components/Projects/PhotoSlider";
 
 export default async function ProjectDetails({
   params,
@@ -16,6 +17,9 @@ export default async function ProjectDetails({
 
   return (
     <div className="max-w-6xl mx-auto p-6 space-y-8">
+      {/* Project Gallery */}
+
+      <PhotoSlider thumbnails={project.thumbnail} />
       {/* Project Header */}
       <div className="space-y-4">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
@@ -32,7 +36,7 @@ export default async function ProjectDetails({
           href={project.link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-[var(--primary)] hover:bg-[#4e2ffbc5] text-white rounded-lg transition-colors"
         >
           <TbWorld size={18} />
           Live Demo
@@ -50,35 +54,17 @@ export default async function ProjectDetails({
         )}
       </div>
 
-      {/* Project Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {project.thumbnail.map((img, index) => (
-          <div
-            key={index}
-            className="relative aspect-video rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700"
-          >
-            <Image
-              src={img}
-              alt={`${project.title} screenshot ${index + 1}`}
-              fill
-              className="object-cover"
-              quality={100}
-            />
-          </div>
-        ))}
-      </div>
-
       {/* Project Details Sections */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Key Features */}
-        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-          <h2 className="text-xl font-semibold mb-4 text-blue-500">
+        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 card-shadow card">
+          <h2 className="text-xl font-semibold mb-4 text-[var(--primary)]">
             Key Features
           </h2>
           <ul className="space-y-2">
             {project.keyFeatures.map((feature, index) => (
               <li key={index} className="flex items-start gap-2">
-                <span className="text-blue-400 mt-1">•</span>
+                <span className="text-[var(--primary)] mt-1">•</span>
                 <span className="text-gray-700 dark:text-gray-300">
                   {feature}
                 </span>
@@ -88,14 +74,14 @@ export default async function ProjectDetails({
         </div>
 
         {/* Challenges Faced */}
-        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-          <h2 className="text-xl font-semibold mb-4 text-blue-500">
+        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 card-shadow card">
+          <h2 className="text-xl font-semibold mb-4 text-[var(--primary)]">
             Challenges Faced
           </h2>
           <ul className="space-y-2">
             {project.challengesFaced.map((challenge, index) => (
               <li key={index} className="flex items-start gap-2">
-                <span className="text-blue-400 mt-1">•</span>
+                <span className="text-[var(--primary)] mt-1">•</span>
                 <span className="text-gray-700 dark:text-gray-300">
                   {challenge}
                 </span>
@@ -106,14 +92,14 @@ export default async function ProjectDetails({
 
         {/* Future Plans */}
         {project.futurePlans && (
-          <div className="lg:col-span-2 bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-            <h2 className="text-xl font-semibold mb-4 text-blue-500">
+          <div className="lg:col-span-2 bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 card-shadow card">
+            <h2 className="text-xl font-semibold mb-4 text-[var(--primary)]">
               Future Plans
             </h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {project.futurePlans.map((plan, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">•</span>
+                <li key={index} className="flex items-start gap-2 ">
+                  <span className="text-[var(--primary)] mt-1">•</span>
                   <span className="text-gray-700 dark:text-gray-300">
                     {plan}
                   </span>
@@ -125,8 +111,8 @@ export default async function ProjectDetails({
       </div>
 
       {/* Technology Stack */}
-      <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
-        <h2 className="text-xl font-semibold mb-4 text-blue-500">
+      <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 card-shadow card">
+        <h2 className="text-xl font-semibold mb-4 text-[var(--primary)]">
           Technology Stack
         </h2>
         <div className="flex flex-wrap gap-4">
