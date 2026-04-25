@@ -60,7 +60,7 @@ export default function About() {
               whileHover="hover"
               className="card-shadow group card p-6 bg-white/5 backdrop-blur-xs border border-white/10 rounded-xl dark:bg-gray-800/50"
             >
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white group-hover:text-[var(--primary)] transition-colors duration-300">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white group-hover:text-(--primary) transition-colors duration-300">
                 {item.title}
               </h3>
               <motion.p

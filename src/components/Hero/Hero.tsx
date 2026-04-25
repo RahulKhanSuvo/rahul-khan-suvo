@@ -2,8 +2,8 @@ import Image from "next/image";
 import SocialBtn from "./SocialBtn";
 import { MdFileDownload } from "react-icons/md";
 import Reaving from "../Animation/Reaving";
-import { IntroSection } from "./IntroSection";
 import ImageAnimating from "../Animation/ImageAnimating";
+import { IntroSection } from "./IntroSection";
 
 export default function Hero() {
   return (
