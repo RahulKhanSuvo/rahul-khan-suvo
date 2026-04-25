@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@better-auth/mongo-adapter": "^1.6.9",
     "axios": "^1.15.2",
+    "better-auth": "^1.6.9",
     "classnames": "^2.5.1",
     "lucide-react": "^1.11.0",
     "mongodb": "^7.2.0",
