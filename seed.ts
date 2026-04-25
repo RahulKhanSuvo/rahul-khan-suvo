@@ -7,7 +7,7 @@ async function createAdmin() {
     await auth.api.signUpEmail({
         body: {
             email: "admin@gmail.com",
-            password: "123456",
+            password: "123456abcd",
             name: "Md. Rahul Khan Suvo",
         }
     });
