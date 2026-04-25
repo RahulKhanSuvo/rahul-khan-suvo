@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Toaster } from "react-hot-toast";
 import ScrollProgressBar from "@/components/Animation/ScrollProgressBar";
