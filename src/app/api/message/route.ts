@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import dbConnect from "@/lib/dbConnect";
+import Message from "@/modal/Message";
 export const POST = async (req: NextRequest) => {
     try {
         const body = await req.json()
@@ -7,6 +9,9 @@ export const POST = async (req: NextRequest) => {
         if (!name || !email || !message) {
             return NextResponse.json({ error: "Missing fields" }, { status: 400 });
         }
+        await dbConnect();
+        const newMessage = new Message({ name, email, message });
+        await newMessage.save();
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
