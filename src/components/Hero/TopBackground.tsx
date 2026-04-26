@@ -120,10 +120,10 @@ export default function TopBackground() {
           alt="dark mode highlighter for mobile"
         />
       </div>
-      <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_light.svg')] bg-[auto_auto] hidden dark:hidden md:block"></div>
-      <div className="absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mobile_light.svg')] bg-[auto_auto] dark:hidden"></div>
-      <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_dark.svg')] bg-[auto_auto] hidden dark:md:block"></div>
-      <div className="absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mobile_dark.svg')] bg-[auto_auto] hidden dark:block md:dark:hidden"></div>
+      <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_light.svg')] bg-size-[auto_auto] hidden dark:hidden md:block"></div>
+      <div className="absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mobile_light.svg')] bg-size-[auto_auto] dark:hidden"></div>
+      <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_dark.svg')] bg-size-[auto_auto] hidden dark:md:block"></div>
+      <div className="absolute top-0 w-full h-[600px] bg-repeat-x bg-[url('/top_bg_mobile_dark.svg')] bg-size-[auto_auto] hidden dark:block md:dark:hidden"></div>
     </>
   );
 }
