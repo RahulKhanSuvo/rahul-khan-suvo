@@ -16,7 +16,7 @@
     "role": "Lead Full Stack Developer",
     "duration": "Dec 2024 - Jan 2025",
     "projectType": "Web Application",
-    "description": "JobZilla is a web-based platform designed to help manage jobs within a company, track employee job requests, and provide a smooth experience for both employees and administrators.",
+    "description": "JobZilla is a complete job portal platform connecting candidates, recruiters, and administrators. Candidates can search & apply for jobs, track applications, and receive AI-powered job recommendations. Recruiters can post jobs, manage applicants, schedule interviews, and access analytics. Admins have full control over users, jobs, reports, and platform settings with advanced moderation tools.",
     "languageIcons": [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
@@ -29,22 +29,66 @@
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
     ],
     "keyFeatures": [
-      { "title": "Asset Management Workflow", "description": "HR can manage all office assets, and employees can send asset requests directly to HR." },
-      { "title": "Dedicated HR Dashboard", "description": "Dedicated dashboard for HR to track and manage assets efficiently." },
-      { "title": "Role-Based Permissions", "description": "Role-based permissions and unlimited user support." },
-      { "title": "Team Collaboration", "description": "Employees can join and collaborate within teams." }
+      {
+        "title": "Candidate Module",
+        "description": "Advanced job search with filters (location, salary, type, experience), one-click apply, resume parser, application tracker, saved jobs, job alerts, and AI-driven recommendations."
+      },
+      {
+        "title": "Recruiter Module",
+        "description": "Post/edit jobs, manage applicants, shortlist/reject candidates, schedule interviews (video/on-site), send bulk emails, and view real-time analytics (views, applications, conversion rates)."
+      },
+      {
+        "title": "Admin Dashboard",
+        "description": "Full platform oversight: verify jobs/companies, manage users (suspend/activate), resolve disputes, moderate reviews, generate platform reports, and configure system settings."
+      },
+      {
+        "title": "Collaboration & Communication",
+        "description": "In-app messaging between candidates and recruiters, interview scheduling with calendar sync, real-time notifications via email & WebSocket."
+      },
+      {
+        "title": "Security & Role Management",
+        "description": "Role-based access control (RBAC) for three distinct roles, JWT authentication, session management, and audit logs for admin actions."
+      }
     ],
     "challengesFaced": [
-      { "title": "Performance Optimization", "description": "Occasional slowness and complex navigation." },
-      { "title": "Third-Party Integration", "description": "Limited integration with some third-party tools." },
-      { "title": "Data Import Process", "description": "Data import processes can be time-consuming." },
-      { "title": "Offline Capabilities", "description": "Mobile app lacks offline mode." }
+      {
+        "title": "Scalable Search & Filtering",
+        "description": "Implementing fast, full-text search across thousands of jobs with multiple filters (location, salary, skills) required optimizing PostgreSQL queries and using Redis caching."
+      },
+      {
+        "title": "Real-Time Communication",
+        "description": "Building a reliable chat system and live notifications using Socket.IO while maintaining performance under high concurrent users."
+      },
+      {
+        "title": "Resume Parsing Complexity",
+        "description": "Extracting structured data (skills, experience, education) from uploaded PDFs/DOCX with high accuracy across different formats."
+      },
+      {
+        "title": "Access Control Granularity",
+        "description": "Ensuring that recruiters only see applicants for their jobs and admins have limited but powerful moderation tools without exposing sensitive data."
+      }
     ],
     "futurePlans": [
-      { "title": "Offline Mobile Mode", "description": "Enhance mobile app with offline capabilities." },
-      { "title": "Expanded Integrations", "description": "Expand integration options with popular third-party tools." },
-      { "title": "Faster Data Import", "description": "Improve data import processes for large datasets." },
-      { "title": "UI/UX Enhancements", "description": "Optimize user interface for better navigation." }
+      {
+        "title": "AI-Powered Screening",
+        "description": "Automated candidate shortlisting based on job description matching and skill scoring."
+      },
+      {
+        "title": "Video Interview Integration",
+        "description": "Embed video conferencing (Zoom/WebRTC) directly into the platform for seamless interviews."
+      },
+      {
+        "title": "Company Branded Pages",
+        "description": "Dedicated company profiles with job listings, reviews, and employer branding tools."
+      },
+      {
+        "title": "Mobile App with Offline Mode",
+        "description": "React Native mobile app allowing candidates to browse saved jobs and apply even without internet."
+      },
+      {
+        "title": "Analytics & Insights",
+        "description": "Provide recruiters with market salary trends, competitor hiring data, and candidate sourcing analytics."
+      }
     ]
   },
   {
@@ -73,23 +117,62 @@
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
     ],
     "keyFeatures": [
-      { "title": "Direct Marketplace", "description": "Direct marketplace for farmers to sell products." },
-      { "title": "Integrated Pest Detection", "description": "Integrated pest detection tool." },
-      { "title": "Farmer Resource Center", "description": "Farmer Resource Center with expert advice." },
-      { "title": "Community Forum", "description": "Community forum for farmer discussions." },
-      { "title": "Order Management Dashboard", "description": "Integrated order management dashboard." }
+      {
+        "title": "Direct Marketplace",
+        "description": "Direct marketplace for farmers to sell products."
+      },
+      {
+        "title": "Integrated Pest Detection",
+        "description": "Integrated pest detection tool."
+      },
+      {
+        "title": "Farmer Resource Center",
+        "description": "Farmer Resource Center with expert advice."
+      },
+      {
+        "title": "Community Forum",
+        "description": "Community forum for farmer discussions."
+      },
+      {
+        "title": "Order Management Dashboard",
+        "description": "Integrated order management dashboard."
+      }
     ],
     "challengesFaced": [
-      { "title": "Resource Constraints", "description": "Integration of the pest detection tool with limited resources." },
-      { "title": "Real-Time Communication", "description": "Ensuring seamless real-time communication in the community forum." },
-      { "title": "Complex UX Design", "description": "Dealing with the complexity of building a user-friendly dashboard for farmers." },
-      { "title": "Cross-Device Responsiveness", "description": "Ensuring mobile responsiveness across different devices." }
+      {
+        "title": "Resource Constraints",
+        "description": "Integration of the pest detection tool with limited resources."
+      },
+      {
+        "title": "Real-Time Communication",
+        "description": "Ensuring seamless real-time communication in the community forum."
+      },
+      {
+        "title": "Complex UX Design",
+        "description": "Dealing with the complexity of building a user-friendly dashboard for farmers."
+      },
+      {
+        "title": "Cross-Device Responsiveness",
+        "description": "Ensuring mobile responsiveness across different devices."
+      }
     ],
     "futurePlans": [
-      { "title": "Expanded Toolset", "description": "Expand the platform to include more agricultural tools." },
-      { "title": "AI-Driven Crop Suggestions", "description": "Integrate AI-driven crop suggestions based on weather and market trends." },
-      { "title": "More Payment Methods", "description": "Add more payment methods for easier transactions." },
-      { "title": "Enhanced Mobile Accessibility", "description": "Enhance the mobile app version for better accessibility." }
+      {
+        "title": "Expanded Toolset",
+        "description": "Expand the platform to include more agricultural tools."
+      },
+      {
+        "title": "AI-Driven Crop Suggestions",
+        "description": "Integrate AI-driven crop suggestions based on weather and market trends."
+      },
+      {
+        "title": "More Payment Methods",
+        "description": "Add more payment methods for easier transactions."
+      },
+      {
+        "title": "Enhanced Mobile Accessibility",
+        "description": "Enhance the mobile app version for better accessibility."
+      }
     ]
   },
   {
@@ -117,23 +200,62 @@
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
     ],
     "keyFeatures": [
-      { "title": "Booking System", "description": "User-friendly car rental booking system." },
-      { "title": "Real-Time Availability", "description": "Real-time vehicle availability and booking management." },
-      { "title": "Secure Payments", "description": "Secure payment processing." },
-      { "title": "Responsive Design", "description": "Responsive design for mobile and desktop users." },
-      { "title": "Admin Dashboard", "description": "Admin dashboard for managing listings and reservations." }
+      {
+        "title": "Booking System",
+        "description": "User-friendly car rental booking system."
+      },
+      {
+        "title": "Real-Time Availability",
+        "description": "Real-time vehicle availability and booking management."
+      },
+      {
+        "title": "Secure Payments",
+        "description": "Secure payment processing."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Responsive design for mobile and desktop users."
+      },
+      {
+        "title": "Admin Dashboard",
+        "description": "Admin dashboard for managing listings and reservations."
+      }
     ],
     "challengesFaced": [
-      { "title": "Seamless UX", "description": "Ensuring seamless user experience across devices." },
-      { "title": "Payment Gateway Integration", "description": "Integrating secure and reliable payment gateways." },
-      { "title": "Real-Time Inventory", "description": "Managing real-time updates for vehicle availability." },
-      { "title": "Robust Authentication", "description": "Implementing robust authentication for users." }
+      {
+        "title": "Seamless UX",
+        "description": "Ensuring seamless user experience across devices."
+      },
+      {
+        "title": "Payment Gateway Integration",
+        "description": "Integrating secure and reliable payment gateways."
+      },
+      {
+        "title": "Real-Time Inventory",
+        "description": "Managing real-time updates for vehicle availability."
+      },
+      {
+        "title": "Robust Authentication",
+        "description": "Implementing robust authentication for users."
+      }
     ],
     "futurePlans": [
-      { "title": "Smartphone Keyless Access", "description": "Introduce keyless access using smartphone integration." },
-      { "title": "AI Recommendations", "description": "Implement AI-driven recommendations for users." },
-      { "title": "Peer-to-Peer Sharing", "description": "Expand to include peer-to-peer car sharing features." },
-      { "title": "Data Protection", "description": "Enhance security measures for user data protection." }
+      {
+        "title": "Smartphone Keyless Access",
+        "description": "Introduce keyless access using smartphone integration."
+      },
+      {
+        "title": "AI Recommendations",
+        "description": "Implement AI-driven recommendations for users."
+      },
+      {
+        "title": "Peer-to-Peer Sharing",
+        "description": "Expand to include peer-to-peer car sharing features."
+      },
+      {
+        "title": "Data Protection",
+        "description": "Enhance security measures for user data protection."
+      }
     ]
   },
   {
@@ -163,22 +285,58 @@
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
     ],
     "keyFeatures": [
-      { "title": "Asset Management Workflow", "description": "HR can manage all office assets, and employees can send asset requests directly to HR." },
-      { "title": "Dedicated HR Dashboard", "description": "Dedicated dashboard for HR to track and manage assets efficiently." },
-      { "title": "Role-Based Permissions", "description": "Role-based permissions and unlimited user support." },
-      { "title": "Team Collaboration", "description": "Employees can join and collaborate within teams." }
+      {
+        "title": "Asset Management Workflow",
+        "description": "HR can manage all office assets, and employees can send asset requests directly to HR."
+      },
+      {
+        "title": "Dedicated HR Dashboard",
+        "description": "Dedicated dashboard for HR to track and manage assets efficiently."
+      },
+      {
+        "title": "Role-Based Permissions",
+        "description": "Role-based permissions and unlimited user support."
+      },
+      {
+        "title": "Team Collaboration",
+        "description": "Employees can join and collaborate within teams."
+      }
     ],
     "challengesFaced": [
-      { "title": "Performance Optimization", "description": "Occasional slowness and complex navigation." },
-      { "title": "Third-Party Integration", "description": "Limited integration with some third-party tools." },
-      { "title": "Data Import Process", "description": "Data import processes can be time-consuming." },
-      { "title": "Offline Capabilities", "description": "Mobile app lacks offline mode." }
+      {
+        "title": "Performance Optimization",
+        "description": "Occasional slowness and complex navigation."
+      },
+      {
+        "title": "Third-Party Integration",
+        "description": "Limited integration with some third-party tools."
+      },
+      {
+        "title": "Data Import Process",
+        "description": "Data import processes can be time-consuming."
+      },
+      {
+        "title": "Offline Capabilities",
+        "description": "Mobile app lacks offline mode."
+      }
     ],
     "futurePlans": [
-      { "title": "Offline Mobile Mode", "description": "Enhance mobile app with offline capabilities." },
-      { "title": "Expanded Integrations", "description": "Expand integration options with popular third-party tools." },
-      { "title": "Faster Data Import", "description": "Improve data import processes for large datasets." },
-      { "title": "UI/UX Enhancements", "description": "Optimize user interface for better navigation." }
+      {
+        "title": "Offline Mobile Mode",
+        "description": "Enhance mobile app with offline capabilities."
+      },
+      {
+        "title": "Expanded Integrations",
+        "description": "Expand integration options with popular third-party tools."
+      },
+      {
+        "title": "Faster Data Import",
+        "description": "Improve data import processes for large datasets."
+      },
+      {
+        "title": "UI/UX Enhancements",
+        "description": "Optimize user interface for better navigation."
+      }
     ]
   }
 ]
