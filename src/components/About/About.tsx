@@ -48,7 +48,7 @@ const About = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 mt-2">
+            <div className="flex justify-center md:justify-start gap-4 mt-2">
               <a
                 href="#contact"
                 className="flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-all duration-300"
