@@ -20,7 +20,7 @@ export default function Home() {
         alt="bottom gradient"
         width={1557}
         height={936}
-        className="absolute -bottom-[175px] left-1/2 -translate-x-1/2 min-w-[1557px] min-h-[936px] -z-50 hidden md:block"
+        className="absolute bottom-[-175px] left-1/2 -translate-x-1/2 min-w-[1557px] min-h-[936px] -z-50 hidden md:block"
         src={"/bottom_gradient.svg"}
       />
     </div>

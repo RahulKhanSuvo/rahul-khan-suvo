@@ -72,7 +72,7 @@ export default function SocialButtons() {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white bg-[var(--primary)] rounded-full p-2.5 transition-colors duration-300"
+          className="text-white bg-primary rounded-full p-2.5 transition-colors duration-300"
           aria-label={`Visit my ${link.name} profile`}
           variants={item}
           whileHover="hover"
