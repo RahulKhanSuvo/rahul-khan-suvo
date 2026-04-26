@@ -49,14 +49,15 @@ export default function PhotoSlider({ thumbnails }: PhotoSliderProps) {
       </button>
 
       <Swiper
-        cssMode={true}
+        grabCursor={true}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
         navigation={
           navigationReady
             ? {
-                prevEl: prevRef.current,
-                nextEl: nextRef.current,
-              }
+              prevEl: prevRef.current,
+              nextEl: nextRef.current,
+            }
             : false
         }
         pagination={{ clickable: true }}
@@ -75,12 +76,13 @@ export default function PhotoSlider({ thumbnails }: PhotoSliderProps) {
       >
         {thumbnails.map((thumbnail, index) => (
           <SwiperSlide
-            className="border rounded-3xl overflow-hidden"
+            className=" rounded overflow-hidden"
             key={index}
           >
-            <div className="relative card-shadow aspect-video rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-700">
+            <div className="relative card-shadow rounded overflow-hidden border border-gray-200 dark:border-gray-700 aspect-video">
               <Image
                 src={thumbnail}
+                className="object-fill"
                 alt={`${index} screenshot ${index + 1}`}
                 fill
                 quality={100}
