@@ -35,7 +35,6 @@ export default function Hero() {
           width={280}
           height={320}
           className="md:hidden w-full h-auto rounded-4xl shadow-2xl mx-auto border-4 border-white/10"
-          style={{ height: 'auto' }}
           priority
         />
         <ImageAnimating>
