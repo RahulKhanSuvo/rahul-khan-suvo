@@ -65,8 +65,6 @@ export default function ProjectHero({
         >
           {title}
         </motion.h1>
-
-
       </div>
     </div>
   );

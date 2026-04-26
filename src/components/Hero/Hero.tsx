@@ -63,6 +63,21 @@ export default function Hero() {
             />
           </div>
         </ImageAnimating>
+
+        {/* Spinning Experience Badge */}
+        <div className="absolute -bottom-4 -left-4 md:-bottom-8 md:-left-12 z-30 w-28 h-28 md:w-36 md:h-36 bg-background rounded-full outline outline-background flex items-center justify-center shadow-xl hover:scale-110 transition-transform duration-300">
+          <svg viewBox="0 0 100 100" className="w-full h-full animate-[spin_10s_linear_infinite]">
+            <path id="circlePath" d="M 50, 50 m -34, 0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0" fill="transparent" />
+            <text className="text-[10px] font-black fill-primary tracking-[0.2em] uppercase">
+              <textPath href="#circlePath">
+                • 1+ Years Exp • Web Developer
+              </textPath>
+            </text>
+          </svg>
+          <div className="absolute flex flex-col items-center justify-center text-primary mt-1">
+            <span className="text-3xl font-black leading-none">1+</span>
+          </div>
+        </div>
       </div>
       <SocialBtn />
     </section>
