@@ -38,7 +38,7 @@ const Typewriter = ({ texts, speed = 80, delay = 2500 }: { texts: string[], spee
   return (
     <span>
       {displayText}
-      <span className="inline-block w-[2px] h-[1em] bg-primary ml-0.5 animate-pulse align-middle" />
+      <span className="inline-block text-4xl md:text-5xl lg:text-6xl w-[2px] h-[1em] bg-primary ml-0.5 animate-pulse align-middle" />
     </span>
   );
 };
