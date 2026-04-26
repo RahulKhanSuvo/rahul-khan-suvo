@@ -10,17 +10,20 @@
     "link": {
       "label": "JobZilla.com",
       "url": "https://job-zilla.vercel.app/",
-      "githubLink": "https://github.com/RahulKhanSuvo/job-zilla",
-      "clientLink": "https://github.com/RahulKhanSuvo/job-zilla-client"
+      "clientLink": "https://github.com/RahulKhanSuvo/job-zilla",
+      "serverLink": "https://github.com/RahulKhanSuvo/job-zilla-server"
     },
     "description": "JobZilla is a web-based platform designed to help manage jobs within a company, track employee job requests, and provide a smooth experience for both employees and administrators.",
     "languageIcons": [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
     ],
     "keyFeatures": [
       "HR can manage all office assets, and employees can send asset requests directly to HR.",
@@ -127,7 +130,7 @@
   {
     "id": 3,
     "thumbnail": [
-      "https://i.ibb.co/8n8JD4MB/car-portal-rahul-khan-suvo-netlifygrid.png"
+      "https://i.ibb.co.com/Kp2PT67d/Gemini-Generated-Image-mpoxagmpoxagmpox.png"
     ],
     "title": "Carola",
     "link": {

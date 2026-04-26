@@ -13,7 +13,6 @@ export default function Hero() {
         <Reaving>
           <IntroSection name="Rahul Khan" title="Frontend Developer" />
         </Reaving>
-
         <Reaving>
           <a
             href="https://drive.google.com/uc?export=download&id=1-j0laNGiXknvDWZ3RnZbsfp4CRcYquNC"

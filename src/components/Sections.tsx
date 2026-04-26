@@ -11,8 +11,8 @@ export default function Sections() {
       <Hero />
       <About />
       <Experience />
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
     </main>
   );
