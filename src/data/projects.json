@@ -13,6 +13,9 @@
       "clientLink": "https://github.com/RahulKhanSuvo/job-zilla",
       "serverLink": "https://github.com/RahulKhanSuvo/job-zilla-server"
     },
+    "role": "Lead Full Stack Developer",
+    "duration": "Dec 2024 - Jan 2025",
+    "projectType": "Web Application",
     "description": "JobZilla is a web-based platform designed to help manage jobs within a company, track employee job requests, and provide a smooth experience for both employees and administrators.",
     "languageIcons": [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
@@ -51,6 +54,9 @@
       "https://i.ibb.co/zWBbvc2N/image.png"
     ],
     "title": "Agri-Tech",
+    "role": "Full Stack Developer",
+    "duration": "Oct 2024 - Nov 2024",
+    "projectType": "Agricultural Platform",
     "link": {
       "label": "Agri-tech.com",
       "url": "https://agri-tech-vefb.vercel.app",
@@ -92,6 +98,9 @@
       "https://i.ibb.co/Kp2PT67d/Gemini-Generated-Image-mpoxagmpoxagmpox.png"
     ],
     "title": "Carola",
+    "role": "Frontend Developer",
+    "duration": "Sep 2024",
+    "projectType": "E-commerce / Rental",
     "link": {
       "label": "Carola.com",
       "url": "https://car-portal-rahul-khan-suvo.netlify.app/",
@@ -134,6 +143,9 @@
       "https://i.ibb.co/Sw8kzqW2/screencapture-asset-panda-rahul-khan-suvo-netlify-app-login-2025-05-08-00-56-43.png"
     ],
     "title": "Asset-Panda",
+    "role": "Lead Developer",
+    "duration": "Aug 2024 - Sep 2024",
+    "projectType": "Internal Tool",
     "link": {
       "label": "Asset-Panda.com",
       "url": "https://asset-panda-rahul-khan-suvo.netlify.app/",

@@ -48,7 +48,7 @@ export default function Contact() {
                     <span>Your Name</span>
                   </div>
                   <input
-                    className="border border-gray-700  rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                    className="border border-gray-700  rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="What's your name?"
                     id="name"
                     {...register("name", { required: "Name is required" })}
@@ -68,10 +68,11 @@ export default function Contact() {
                     <span>Your Email</span>
                   </div>
                   <input
-                    className="border border-gray-700  rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                    className="border border-gray-700  rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="Your email address"
                     id="email"
                     type="email"
+                    suppressHydrationWarning
                     {...register("email", {
                       required: "Email is required",
                       pattern: {
@@ -95,7 +96,7 @@ export default function Contact() {
                     <span>Your Message</span>
                   </div>
                   <textarea
-                    className="border border-gray-700  rounded-md px-4 py-2 w-full h-32 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
+                    className="border border-gray-700  rounded-md px-4 py-2 w-full h-32 focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="What would you like to say?"
                     id="message"
                     {...register("message", {
@@ -116,7 +117,7 @@ export default function Contact() {
 
               <motion.button
                 type="submit"
-                className="flex items-center justify-center gap-2 bg-[var(--primary)] text-white px-6 py-3 rounded-md w-full font-medium transition-colors"
+                className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-md w-full font-medium transition-colors"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 disabled={isSubmitting}
