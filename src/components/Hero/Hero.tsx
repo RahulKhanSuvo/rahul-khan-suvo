@@ -30,7 +30,7 @@ export default function Hero() {
       {/* Image Container */}
       <div className="relative w-full max-w-xs sm:max-w-md md:w-auto">
         <Image
-          src={"/profile_picture.png"}
+          src={"/profile.jpg"}
           alt="Profile picture of Rahul Khan Suvo"
           width={280}
           height={320}
