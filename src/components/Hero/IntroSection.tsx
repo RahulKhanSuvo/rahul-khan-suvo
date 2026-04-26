@@ -83,16 +83,16 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
       </motion.h1>
 
       {/* Typing title */}
-      <motion.div
-        className="h-8 md:h-10 flex items-center text-lg md:text-xl font-medium text-foreground/70"
+      <div className="flex justify-center md:justify-start">  <motion.div
+        className="h-8 md:h-10 flex items-center text-lg md:text-xl font-medium text-foreground/70 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
         <span className="mr-2 text-foreground/40">&lt;</span>
-        <Typewriter texts={["Frontend Developer", "Full Stack Developer", "UI/UX Enthusiast"]} />
+        <Typewriter texts={["Frontend Developer", "Full Stack Developer"]} />
         <span className="ml-2 text-foreground/40">/&gt;</span>
-      </motion.div>
+      </motion.div></div>
 
       {/* Tagline */}
       <motion.p
