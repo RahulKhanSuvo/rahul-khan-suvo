@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   description: "Developer Portfolio of Rahul Khan Suvo",
 };
 
+import WhatsAppButton from "@/components/WhatsAppButton";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +51,7 @@ export default function RootLayout({
         />
 
         <ThemeToggle />
+        <WhatsAppButton />
         {children}
       </body>
     </html>
