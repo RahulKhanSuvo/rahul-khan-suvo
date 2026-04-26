@@ -66,36 +66,48 @@ export default function Project({
           ))}
         </div>
 
-        <div className="w-full rounded-xl flex">
-          <a
-            href={link.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
-          >
-            <FaGithub />
-            <span className="hidden md:block">GitHub</span>
-          </a>
+        <div className="w-full flex justify-between">
+          <div className="w-full rounded-xl gap-2 flex">
+            <a
+              href={link.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+            >
+              <FaGithub />
+              <span className="hidden md:block">GitHub</span>
+            </a>
 
-          <Link
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
-            href={`/project/${id}`}
-          >
-            <FaArrowUpRightFromSquare />
-            <span className="hidden md:block">Details</span>
-          </Link>
+            {/* <Link
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+              href={`/project/${id}`}
+            >
+              <FaArrowUpRightFromSquare />
+              <span className="hidden md:block">Details</span>
+            </Link> */}
 
-          <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
-          >
-            <TbWorld />
-            <span className="hidden md:block">Live</span>
-          </a>
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+            >
+              <TbWorld />
+              <span className="hidden md:block">Live</span>
+            </a>
+          </div>
+          <div>
+            <Link
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition"
+              href={`/project/${id}`}
+            >
+              <FaArrowUpRightFromSquare />
+              <span className="hidden md:block">Details</span>
+            </Link>
+          </div>
         </div>
-      </div></div>
+      </div>
+      </div>
     </motion.div>
   );
 }

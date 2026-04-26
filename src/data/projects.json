@@ -2,6 +2,47 @@
   {
     "id": 1,
     "thumbnail": [
+      "https://i.ibb.co/0RKcNDz9/screencapture-asset-panda-rahul-khan-suvo-netlify-app-dashboard-hr-Home-2025-05-08-00-56-04.png",
+      "https://i.ibb.co/v604ZmBT/Screenshot-2025-05-08-005829.png",
+      "https://i.ibb.co/Sw8kzqW2/screencapture-asset-panda-rahul-khan-suvo-netlify-app-login-2025-05-08-00-56-43.png"
+    ],
+    "title": "Asset-Panda",
+    "link": {
+      "label": "Asset-Panda.com",
+      "url": "https://asset-panda-rahul-khan-suvo.netlify.app/",
+      "githubLink": "https://github.com/RahulKhanSuvo/asset-panda-client"
+    },
+    "description": "AssetPanda is a web-based platform designed to help manage assets within a company, track employee asset requests, and provide a smooth experience for both employees and administrators.",
+    "languageIcons": [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+    ],
+    "keyFeatures": [
+      "HR can manage all office assets, and employees can send asset requests directly to HR.",
+      "Dedicated dashboard for HR to track and manage assets efficiently.",
+      "Role-based permissions and unlimited user support.",
+      "Employees can join and collaborate within teams."
+    ],
+    "challengesFaced": [
+      "Occasional slowness and complex navigation.",
+      "Limited integration with some third-party tools.",
+      "Data import processes can be time-consuming.",
+      "Mobile app lacks offline mode."
+    ],
+    "futurePlans": [
+      "Enhance mobile app with offline capabilities.",
+      "Expand integration options with popular third-party tools.",
+      "Improve data import processes for large datasets.",
+      "Optimize user interface for better navigation."
+    ]
+  },
+  {
+    "id": 0,
+    "thumbnail": [
       "https://i.ibb.co/xvY5Kn1/screencapture-agri-tech-vefb-vercel-app-marketplace-2025-05-05-23-59-26.png",
       "https://i.ibb.co/zWBbvc2N/image.png"
     ],
