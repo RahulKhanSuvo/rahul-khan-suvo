@@ -30,36 +30,36 @@ export default function Hero() {
       {/* Image Container */}
       <div className="relative w-full max-w-xs sm:max-w-md md:w-auto">
         <Image
-          src={"/profile.jpg"}
-          alt="Profile picture of Rahul Khan"
+          src={"/profile_picture.png"}
+          alt="Profile picture of Rahul Khan Suvo"
           width={280}
           height={320}
-          className="md:hidden w-full h-auto rounded-2xl  shadow-lg mx-auto"
+          className="md:hidden w-full h-auto rounded-[2rem] shadow-2xl mx-auto border-4 border-white/10"
           priority
         />
         <ImageAnimating>
-          <div className="hidden md:flex items-center justify-center group  w-full h-auto">
+          <div className="hidden md:flex items-center justify-center group w-full h-auto">
             <Image
               src={"/profile_light_purple.png"}
               alt="Decorative background"
               height={430}
               width={375}
-              className="w-[370px] h-[430px] absolute right-0 -z-10 group-hover:scale-[102%] group-hover:-rotate-3 ease-in-out duration-300"
+              className="w-[370px] h-[430px] absolute right-0 -z-10 group-hover:scale-[105%] group-hover:-rotate-6 ease-in-out duration-500 transition-all opacity-80"
             />
             <Image
               src={"/profile_dark_purple.png"}
               alt="Decorative background"
               height={430}
               width={372}
-              className="w-[370px] h-[430px] absolute right-2 -z-10 group-hover:scale-[102%] group-hover:rotate-3 ease-in-out duration-300"
+              className="w-[370px] h-[430px] absolute right-2 -z-10 group-hover:scale-[105%] group-hover:rotate-6 ease-in-out duration-500 transition-all opacity-80"
             />
 
             <Image
               src={"/profile.jpg"}
-              alt="Profile picture of Rahul Khan"
+              alt="Profile picture of Rahul Khan Suvo"
               height={417}
               width={357}
-              className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-2xl  border-white shadow-lg group-hover:scale-[102%] ease-in-out duration-300"
+              className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-[2rem] border-4 border-white/20 shadow-2xl group-hover:scale-[102%] group-hover:border-primary/50 ease-in-out duration-300 transition-all overflow-hidden object-cover"
             />
           </div>
         </ImageAnimating>
