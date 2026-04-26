@@ -55,13 +55,7 @@ const About = () => {
               >
                 Let&apos;s Contact <FiArrowRight size={18} />
               </a>
-              <a
-                href="https://drive.google.com/uc?export=download&id=1-j0laNGiXknvDWZ3RnZbsfp4CRcYquNC"
-                download
-                className="flex items-center gap-2 border border-foreground/20 text-foreground px-6 py-2.5 rounded-lg font-semibold hover:bg-foreground/5 transition-all duration-300"
-              >
-                Resume <FiDownload size={18} />
-              </a>
+
             </div>
           </motion.div>
 
