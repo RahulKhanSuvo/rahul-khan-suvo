@@ -78,7 +78,8 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
       >
-        Rahul <span className="text-primary">Khan</span>
+        {name.split(" ").slice(0, -1).join(" ")}{" "}
+        <span className="text-primary">{name.split(" ").slice(-1)}</span>
       </motion.h1>
 
       {/* Typing title */}
