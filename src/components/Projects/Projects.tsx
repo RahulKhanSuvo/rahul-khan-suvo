@@ -9,11 +9,12 @@ export default function Projects() {
     <SectionContainer id="projects">
       <div className=" w-full mx-[22px] md:mx-[16px] ">
         <SectionHeader plainText="👌Some of my" highlightedText="Best Works" />
-        <div className="lg:w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-10">
-          {projects.map((project) => (
+        <div className="lg:w-full space-y-10 mt-10">
+          {projects.map((project, index) => (
             <Project
               key={project.id}
               id={project.id}
+              index={index % 2 === 0}
               thumbnail={project.thumbnail[0]}
               title={project.title}
               link={project.link}
