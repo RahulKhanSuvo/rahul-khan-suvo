@@ -172,7 +172,7 @@ export default function Project({
               </div>
               <div>
                 <Link
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/80 transition-colors border dark:border-white/5 border-gray-500 backdrop-blur-md"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/80 transition-colors border dark:border-white/5 border-gray-500 backdrop-blur-md text-white"
                   href={`/project/${id}`}
                 >
                   <FaArrowUpRightFromSquare />
