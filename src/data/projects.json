@@ -47,7 +47,7 @@
   {
     "id": 0,
     "thumbnail": [
-      "https://i.ibb.co/xvY5Kn1/screencapture-agri-tech-vefb-vercel-app-marketplace-2025-05-05-23-59-26.png",
+      "https://i.ibb.co.com/pBWDwcbV/Gemini-Generated-Image-tan4ygtan4ygtan4.png",
       "https://i.ibb.co/zWBbvc2N/image.png"
     ],
     "title": "Agri-Tech",
@@ -84,6 +84,46 @@
       "Integrate AI-driven crop suggestions based on weather and market trends.",
       "Add more payment methods for easier transactions.",
       "Enhance the mobile app version for better accessibility."
+    ]
+  },
+  {
+    "id": 3,
+    "thumbnail": [
+      "https://i.ibb.co.com/Kp2PT67d/Gemini-Generated-Image-mpoxagmpoxagmpox.png"
+    ],
+    "title": "Carola",
+    "link": {
+      "label": "Carola.com",
+      "url": "https://car-portal-rahul-khan-suvo.netlify.app/",
+      "githubLink": "https://github.com/RahulKhanSuvo/carRental"
+    },
+    "description": "Carola is an intuitive car rental application that allows users to easily browse, book, and manage rentals.",
+    "languageIcons": [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+    ],
+    "keyFeatures": [
+      "User-friendly car rental booking system.",
+      "Real-time vehicle availability and booking management.",
+      "Secure payment processing.",
+      "Responsive design for mobile and desktop users.",
+      "Admin dashboard for managing listings and reservations."
+    ],
+    "challengesFaced": [
+      "Ensuring seamless user experience across devices.",
+      "Integrating secure and reliable payment gateways.",
+      "Managing real-time updates for vehicle availability.",
+      "Implementing robust authentication for users."
+    ],
+    "futurePlans": [
+      "Introduce keyless access using smartphone integration.",
+      "Implement AI-driven recommendations for users.",
+      "Expand to include peer-to-peer car sharing features.",
+      "Enhance security measures for user data protection."
     ]
   },
   {
@@ -125,46 +165,6 @@
       "Expand integration options with popular third-party tools.",
       "Improve data import processes for large datasets.",
       "Optimize user interface for better navigation."
-    ]
-  },
-  {
-    "id": 3,
-    "thumbnail": [
-      "https://i.ibb.co.com/Kp2PT67d/Gemini-Generated-Image-mpoxagmpoxagmpox.png"
-    ],
-    "title": "Carola",
-    "link": {
-      "label": "Carola.com",
-      "url": "https://car-portal-rahul-khan-suvo.netlify.app/",
-      "githubLink": "https://github.com/RahulKhanSuvo/carRental"
-    },
-    "description": "Carola is an intuitive car rental application that allows users to easily browse, book, and manage rentals.",
-    "languageIcons": [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-    ],
-    "keyFeatures": [
-      "User-friendly car rental booking system.",
-      "Real-time vehicle availability and booking management.",
-      "Secure payment processing.",
-      "Responsive design for mobile and desktop users.",
-      "Admin dashboard for managing listings and reservations."
-    ],
-    "challengesFaced": [
-      "Ensuring seamless user experience across devices.",
-      "Integrating secure and reliable payment gateways.",
-      "Managing real-time updates for vehicle availability.",
-      "Implementing robust authentication for users."
-    ],
-    "futurePlans": [
-      "Introduce keyless access using smartphone integration.",
-      "Implement AI-driven recommendations for users.",
-      "Expand to include peer-to-peer car sharing features.",
-      "Enhance security measures for user data protection."
     ]
   }
 ]
