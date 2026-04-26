@@ -13,8 +13,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --primary: var(--primary);
-  --card: var(--card);
+  --color-primary: var(--primary);
+  --color-card: var(--card);
 }
 
 .dark {

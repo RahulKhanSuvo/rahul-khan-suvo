@@ -1,0 +1,20 @@
+[
+  {
+    "degree": "Programming Course",
+    "institution": "Harvard University",
+    "duration": "2006 - 2014",
+    "description": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+  },
+  {
+    "degree": "Graphic Design Course",
+    "institution": "Blockdots, London",
+    "duration": "2016 - 2020",
+    "description": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+  },
+  {
+    "degree": "Web design course",
+    "institution": "University of California",
+    "duration": "2012 - 2015",
+    "description": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+  }
+]
