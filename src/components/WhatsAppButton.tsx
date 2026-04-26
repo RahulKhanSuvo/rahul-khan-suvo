@@ -19,7 +19,7 @@ export default function WhatsAppButton() {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.div 
+        <motion.div
           className="fixed bottom-6 right-6 z-50"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -27,7 +27,7 @@ export default function WhatsAppButton() {
           transition={{ duration: 0.3 }}
         >
           <motion.a
-            href="https://api.whatsapp.com/send/?phone=%01609553810&text=Hi%21&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=%2B8801609553810&text&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
