@@ -11,7 +11,7 @@
       "label": "JobZilla.com",
       "url": "https://job-zilla.vercel.app/",
       "clientLink": "https://github.com/RahulKhanSuvo/job-zilla",
-      "serverLink": "https://github.com/RahulKhanSuvo/job-zilla-server"
+      "serverLink": "https://github.com/RahulKhanSuvo/jobZilla-server"
     },
     "role": "Lead Full Stack Developer",
     "duration": "Dec 2024 - Jan 2025",
@@ -60,7 +60,7 @@
     "link": {
       "label": "Agri-tech.com",
       "url": "https://agri-tech-vefb.vercel.app",
-      "githubLink": "https://github.com/RahulKhanSuvo/agri-tech"
+      "clientLink": "https://github.com/RahulKhanSuvo/agri-tech"
     },
     "description": "Introducing 'Agri-Tech,' a collaborative platform transforming the agricultural landscape for farmers. This innovative project empowers farmers to sell their products directly to customers, cutting out the middleman and increasing their profits. Agri-Tech integrates essential tools like a pest detector, a comprehensive Farmer Resource Center with expert advice, and a community forum. The integrated dashboard allows farmers to manage orders and oversee their agricultural services with ease.",
     "languageIcons": [
@@ -104,7 +104,8 @@
     "link": {
       "label": "Carola.com",
       "url": "https://car-portal-rahul-khan-suvo.netlify.app/",
-      "githubLink": "https://github.com/RahulKhanSuvo/carRental"
+      "clientLink": "https://github.com/RahulKhanSuvo/carRental",
+      "serverLink": "https://github.com/RahulKhanSuvo/carRental-server"
     },
     "description": "Carola is an intuitive car rental application that allows users to easily browse, book, and manage rentals.",
     "languageIcons": [
@@ -149,7 +150,8 @@
     "link": {
       "label": "Asset-Panda.com",
       "url": "https://asset-panda-rahul-khan-suvo.netlify.app/",
-      "githubLink": "https://github.com/RahulKhanSuvo/asset-panda-client"
+      "clientLink": "https://github.com/RahulKhanSuvo/asset-panda-client",
+      "serverLink": "https://github.com/RahulKhanSuvo/asset-panda-server"
     },
     "description": "AssetPanda is a web-based platform designed to help manage assets within a company, track employee asset requests, and provide a smooth experience for both employees and administrators.",
     "languageIcons": [
