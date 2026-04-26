@@ -1,0 +1,33 @@
+[
+  {
+    "role": "Frontend Developer",
+    "company": "Softvence",
+    "companyUrl": "https://softvence.com",
+    "duration": "Feb 2023 - Present",
+    "location": "Remote",
+    "description": "Leading the frontend development of high-performance web applications, focusing on scalable architecture and seamless user experiences.",
+    "achievements": [
+      "Optimized application performance, resulting in a 30% reduction in initial load times.",
+      "Spearheaded the migration from React to Next.js, improving SEO and server-side rendering efficiency.",
+      "Collaborated with UI/UX designers to implement a design system that reduced development time for new features by 25%.",
+      "Mentored junior developers on best practices for TypeScript and Tailwind CSS."
+    ],
+    "skills": ["React", "Next.js", "Tailwind CSS", "TypeScript", "Redux"]
+  },
+  {
+    "role": "Webflow Developer",
+    "company": "Freelance",
+    "companyUrl": "https://webflow.com",
+    "duration": "Oct 2022 - Jan 2023",
+    "location": "Remote",
+    "description": "Crafting bespoke digital experiences through low-code solutions and custom interactions.",
+    "achievements": [
+      "Successfully delivered 10+ high-converting landing pages for various international clients.",
+      "Integrated complex CMS structures to allow clients to manage their content without technical assistance.",
+      "Customized Webflow sites with advanced JavaScript to achieve unique, high-fidelity animations.",
+      "Ensured 100% mobile responsiveness and cross-browser compatibility for all projects."
+    ],
+    "skills": ["Webflow", "HTML/CSS", "JavaScript", "CMS", "SEO"]
+  }
+]
+
