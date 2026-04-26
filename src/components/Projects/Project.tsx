@@ -105,6 +105,7 @@ export default function Project({
             height={280}
             alt="Project Thumbnail"
             className="w-full h-[200px] md:h-[280px] object-cover rounded-md"
+            style={{ width: '100%', height: 'auto' }}
           />
         </div>
 
@@ -128,6 +129,7 @@ export default function Project({
                   alt="language icon"
                   width={20}
                   height={20}
+                  style={{ height: 'auto' }}
                   className="drop-shadow-sm"
                 />
               ))}

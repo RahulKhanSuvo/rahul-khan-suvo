@@ -32,7 +32,7 @@ export default function Skill({ name, icon }: { name: string; icon: string }) {
             WebkitMaskImage: mask,
           }}
         ></motion.div>
-        <Image width={20} height={20} src={icon} alt={`${name} icon`} />
+        <Image width={20} height={20} src={icon} alt={`${name} icon`} style={{ height: 'auto' }} />
         <p className="text-lg">{name}</p>
       </div>
     </Reveal>

@@ -62,6 +62,7 @@ function NavBar() {
           height={20}
           width={20}
           className=" block dark:hidden"
+          style={{ height: 'auto' }}
         />
         <Image
           alt="dark"
@@ -69,6 +70,7 @@ function NavBar() {
           height={20}
           width={20}
           className="hidden dark:block"
+          style={{ height: 'auto' }}
         />
       </button>
       <Reveal initialY={-20} duration={0.5}>

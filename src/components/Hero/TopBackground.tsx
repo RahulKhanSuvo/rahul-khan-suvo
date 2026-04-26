@@ -99,18 +99,19 @@ export default function TopBackground() {
               animate={icon.animation as any}
               whileHover={{ scale: 1.2 }}
             >
-              <Image width={23} height={23} src={icon.src} alt={icon.alt} />
+              <Image width={23} height={23} src={icon.src} alt={icon.alt} style={{ height: 'auto' }} />
             </motion.div>
           ))}
         </div>
       </div>
       <div className="absolute top-[-315px] left-1/2  -translate-x-1/2 z-0 hidden dark:md:block">
-        <Image
-          width={809}
-          height={877}
-          src="top_highlight.svg"
-          alt="dark mode highlighter"
-        />
+          <Image
+            width={809}
+            height={877}
+            src="top_highlight.svg"
+            alt="dark mode highlighter"
+            style={{ height: 'auto' }}
+          />
       </div>
       <div className="absolute top-[-115px] left-1/2  -translate-x-1/2 z-0 hidden dark:block dark:md:hidden">
         <Image
@@ -118,6 +119,7 @@ export default function TopBackground() {
           height={465}
           src="/top_highlight_mobile.svg"
           alt="dark mode highlighter for mobile"
+          style={{ height: 'auto' }}
         />
       </div>
       <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-[url('/top_bg_light.svg')] bg-size-[auto_auto] hidden dark:hidden md:block"></div>
