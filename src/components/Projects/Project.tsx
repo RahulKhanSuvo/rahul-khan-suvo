@@ -36,15 +36,15 @@ export default function Project({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`flex ${index ? "flex-row" : "flex-row-reverse"} items-stretch w-full p-5 md:p-[18px] gap-[30px] card-shadow card`}
+      className={`flex flex-col ${index ? "md:flex-row" : "md:flex-row-reverse"} items-stretch w-full p-5 md:p-[18px] gap-[30px] card-shadow card`}
     >
-      <div className="rounded-md border-gray-200 border-[0.2px] w-2/3">
+      <div className="rounded-md border-gray-200 border-[0.2px] w-full md:w-2/3">
         <Image
           src={thumbnail}
           width={392}
           height={280}
           alt="Project Thumbnail"
-          className="w-full h-[280px] rounded-md"
+          className="w-full h-[200px] md:h-[280px] object-cover rounded-md"
         />
       </div>
 
@@ -67,8 +67,8 @@ export default function Project({
           ))}
         </div>
 
-        <div className="w-full flex justify-between">
-          <div className="w-full rounded-xl gap-2 flex">
+        <div className="w-full flex justify-between gap-4">
+          <div className="w-full rounded-xl gap-2 flex flex-wrap">
             {link.clientLink && (
               <a
                 href={link.clientLink}

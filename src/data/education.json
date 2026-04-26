@@ -1,20 +1,14 @@
 [
   {
-    "degree": "Programming Course",
-    "institution": "Harvard University",
-    "duration": "2006 - 2014",
-    "description": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+    "degree": "HSC",
+    "institution": "Barguna Government College",
+    "duration": "2018 - 2020",
+    "description": "Completed Higher Secondary Certificate in Science. Built strong foundation in mathematics and problem-solving which helped transition into programming."
   },
   {
-    "degree": "Graphic Design Course",
-    "institution": "Blockdots, London",
-    "duration": "2016 - 2020",
-    "description": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
-  },
-  {
-    "degree": "Web design course",
-    "institution": "University of California",
+    "degree": "SSC",
+    "institution": "Barguna Zilla School",
     "duration": "2012 - 2015",
-    "description": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante."
+    "description": "Completed Secondary School Certificate with focus on Science. Developed early interest in technology and logical thinking."
   }
 ]
