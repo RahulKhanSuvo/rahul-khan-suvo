@@ -94,10 +94,9 @@ export default function TopBackground() {
           {techIcons.map((icon) => (
             <motion.div
               key={icon.name}
-              className={`circle-icon absolute ${icon.position} ${
-                icon.responsive || ""
-              }`}
-              animate={icon.animation}
+              className={`circle-icon absolute ${icon.position} ${icon.responsive || ""
+                }`}
+              animate={icon.animation as any}
               whileHover={{ scale: 1.2 }}
             >
               <Image width={23} height={23} src={icon.src} alt={icon.alt} />
