@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import { IoLogoGithub } from "react-icons/io";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
@@ -28,7 +28,7 @@ export default function SocialButtons() {
     },
   ];
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -38,7 +38,7 @@ export default function SocialButtons() {
     },
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
