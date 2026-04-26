@@ -9,7 +9,29 @@ function NavBar() {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    setActiveSection("home");
+    const sectionIds = sections.map((s) => s.id);
+
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(id);
+          }
+        },
+        { threshold: 0.4 }
+      );
+
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((obs) => obs.disconnect());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const scrollToSection = (sectionId: string) => {
@@ -23,8 +45,8 @@ function NavBar() {
     { id: "home", label: "Home" },
     { id: "about", label: "About Me" },
     { id: "experience", label: "Experience" },
-    { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
+    { id: "skills", label: "Skills" },
     { id: "contact", label: "Contact Me" },
   ];
 
