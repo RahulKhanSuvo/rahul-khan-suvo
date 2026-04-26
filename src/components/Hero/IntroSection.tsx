@@ -83,7 +83,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({
       </motion.h1>
 
       {/* Typing title */}
-      <div className="flex justify-center md:justify-start">  <motion.div
+      <div className="flex justify-center md:justify-start"><motion.div
         className="h-8 md:h-10 flex items-center text-lg md:text-xl font-medium text-foreground/70 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -8,39 +8,6 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  useEffect(() => {
-    const sectionIds = sections.map((s) => s.id);
-
-    const observers: IntersectionObserver[] = [];
-
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id);
-          }
-        },
-        { threshold: 0.4 }
-      );
-
-      observer.observe(el);
-      observers.push(observer);
-    });
-
-    return () => observers.forEach((obs) => obs.disconnect());
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const sections = [
     { id: "home", label: "Home" },
     { id: "about", label: "About Me" },
@@ -49,6 +16,39 @@ function NavBar() {
     { id: "skills", label: "Skills" },
     { id: "contact", label: "Contact Me" },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 50) {
+        setActiveSection("home");
+        return;
+      }
+      const scrollMid = window.scrollY + window.innerHeight / 3;
+      let current = sections[0].id;
+
+      for (const { id } of sections) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollMid) {
+          current = id;
+        }
+      }
+
+      setActiveSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // run once on mount
+
+    return () => window.removeEventListener("scroll", handleScroll);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="fixed top-12 right-6 mx-auto flex flex-col gap-2.5 items-end z-50 md:right-auto md:left-1/2 md:-translate-x-1/2">
