@@ -66,14 +66,7 @@ export default function ProjectHero({
           {title}
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-foreground/50 text-sm font-medium tracking-wide"
-        >
-          Timeline: {duration}
-        </motion.p>
+
       </div>
     </div>
   );

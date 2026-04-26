@@ -57,7 +57,7 @@ export default function ProjectDetails({
 
       {/* Photo Slider Section */}
       {project.thumbnail.length > 1 && (
-        <div className="max-w-5xl mx-auto px-4 mt-16 md:mt-32">
+        <div className="max-w-7xl mx-auto px-4 mt-16 md:mt-32">
           <div className="rounded-3xl p-2 bg-foreground/5 border border-foreground/5">
             <PhotoSlider thumbnails={project.thumbnail} />
           </div>

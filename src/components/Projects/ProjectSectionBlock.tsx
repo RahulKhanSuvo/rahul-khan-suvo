@@ -5,7 +5,10 @@ import { motion } from "motion/react";
 
 interface ProjectSectionBlockProps {
   title: string;
-  items: string[];
+  items: {
+    title: string;
+    description: string;
+  }[];
 }
 
 export default function ProjectSectionBlock({
@@ -13,8 +16,8 @@ export default function ProjectSectionBlock({
   items,
 }: ProjectSectionBlockProps) {
   return (
-    <div className="max-w-4xl mx-auto px-4 mt-16 md:mt-32 overflow-hidden">
-      <motion.div 
+    <div className="max-w-5xl mx-auto px-4 mt-16 md:mt-32 overflow-hidden">
+      <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -27,30 +30,25 @@ export default function ProjectSectionBlock({
 
       <div className="space-y-8">
         {items.map((item, i) => {
-          // Split first few words to act as a pseudo-title since data is flat strings
-          const words = item.split(" ");
-          const itemTitle = words.slice(0, 3).join(" ");
-          const description = words.slice(3).join(" ");
-          
           return (
-            <motion.div 
-              key={i} 
+            <motion.div
+              key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="flex gap-4"
             >
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-2 h-2 rounded-full bg-primary/60 outline outline-4 outline-primary/10"></div>
+              <div className="shrink-0 mt-1">
+                <div className="w-2 h-2 rounded-full bg-primary/60 outline outline-primary/10"></div>
               </div>
               <div>
                 <h3 className="font-semibold text-lg md:text-xl text-foreground/90 capitalize">
-                  {itemTitle} {description ? "..." : ""}
+                  {item.title}
                 </h3>
-                {description && (
+                {item.description && (
                   <p className="text-foreground/70 text-base md:text-lg mt-2 leading-relaxed">
-                    {item}
+                    {item.description}
                   </p>
                 )}
               </div>

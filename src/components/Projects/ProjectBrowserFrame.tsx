@@ -38,7 +38,7 @@ export default function ProjectBrowserFrame({
   };
 
   return (
-    <div className="relative z-20 max-w-5xl mx-auto px-4 -mt-20 md:-mt-32 flex flex-col items-center">
+    <div className="relative z-20 max-w-7xl mx-auto px-4 -mt-20 md:-mt-32 flex flex-col items-center">
       {/* Browser Frame */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
