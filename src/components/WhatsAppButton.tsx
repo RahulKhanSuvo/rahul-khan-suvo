@@ -32,7 +32,7 @@ export default function WhatsAppButton() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl transition-shadow group"
+            className="relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl transition-shadow group"
             aria-label="Chat on WhatsApp"
           >
             <span className="absolute inline-flex w-full h-full rounded-full bg-[#25D366] opacity-75 animate-ping" />
