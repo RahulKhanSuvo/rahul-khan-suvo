@@ -4,6 +4,7 @@ import "../globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Toaster } from "react-hot-toast";
 import ScrollProgressBar from "@/components/Animation/ScrollProgressBar";
+import MouseEffect from "@/components/Animation/MouseEffect";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased `} suppressHydrationWarning>
         <ScrollProgressBar />
+        <MouseEffect />
         <Toaster
           position="top-center"
           toastOptions={{
