@@ -45,7 +45,6 @@ export default function Hero() {
               height={430}
               width={375}
               className="w-[370px] h-[430px] absolute right-0 -z-10 group-hover:scale-[105%] group-hover:-rotate-6 ease-in-out duration-500 transition-all opacity-80"
-              style={{ width: 'auto', height: 'auto' }}
             />
             <Image
               src={"/profile_dark_purple.png"}
@@ -53,7 +52,6 @@ export default function Hero() {
               height={430}
               width={372}
               className="w-[370px] h-[430px] absolute right-2 -z-10 group-hover:scale-[105%] group-hover:rotate-6 ease-in-out duration-500 transition-all opacity-80"
-              style={{ width: 'auto', height: 'auto' }}
             />
 
             <Image
@@ -62,7 +60,6 @@ export default function Hero() {
               height={417}
               width={357}
               className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-4xl border-4 border-white/20 shadow-2xl group-hover:scale-[102%] group-hover:border-primary/50 ease-in-out duration-300 transition-all overflow-hidden object-cover"
-              style={{ height: 'auto' }}
             />
           </div>
         </ImageAnimating>
