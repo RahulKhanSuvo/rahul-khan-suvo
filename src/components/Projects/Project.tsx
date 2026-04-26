@@ -51,13 +51,13 @@ export default function Project({
     const height = rect.height;
     const mX = e.clientX - rect.left;
     const mY = e.clientY - rect.top;
-    
+
     mouseX.set(mX);
     mouseY.set(mY);
 
     const xPct = mX / width - 0.5;
     const yPct = mY / height - 0.5;
-    
+
     x.set(xPct);
     y.set(yPct);
   };
@@ -85,9 +85,8 @@ export default function Project({
           rotateY,
           transformStyle: "preserve-3d",
         }}
-        className={`flex flex-col ${
-          index ? "md:flex-row" : "md:flex-row-reverse"
-        } items-stretch w-full p-5 md:p-[18px] gap-[30px] card-shadow card group relative transition-colors duration-300 hover:border-white/20`}
+        className={`flex flex-col ${index ? "md:flex-row" : "md:flex-row-reverse"
+          } items-stretch w-full p-5 md:p-[18px] gap-[30px] card-shadow card group relative transition-colors duration-300 hover:border-white/20`}
       >
         <motion.div
           className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition duration-300 group-hover:opacity-100 z-10"
@@ -96,7 +95,7 @@ export default function Project({
           }}
         />
 
-        <div 
+        <div
           className="rounded-md border-white/10 border-[0.2px] w-full md:w-2/3 shadow-2xl relative z-20 bg-background/50"
           style={{ transform: "translateZ(30px)" }}
         >
@@ -109,8 +108,9 @@ export default function Project({
           />
         </div>
 
-        <div 
-          className="w-full flex items-center relative z-20"
+        <div
+          className={`w-full flex items-center relative z-20 ${index ? "pr-2" : "pl-2"
+            }`}
           style={{ transform: "translateZ(40px)" }}
         >
           <div className="flex flex-col gap-[11px] w-full">
@@ -140,7 +140,7 @@ export default function Project({
                     href={link.clientLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5 backdrop-blur-md"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10  transition-colors border border-gray-500 backdrop-blur-md"
                   >
                     <FaGithub />
                     <span className="hidden md:block">Client</span>
@@ -151,7 +151,7 @@ export default function Project({
                     href={link.serverLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5 backdrop-blur-md"
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-gray-500 dark:border-white/5 backdrop-blur-md"
                   >
                     <FaGithub />
                     <span className="hidden md:block">Server</span>
@@ -162,7 +162,7 @@ export default function Project({
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5 backdrop-blur-md"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-gray-500 dark:border-white/5 backdrop-blur-md"
                 >
                   <TbWorld />
                   <span className="hidden md:block">Live</span>
@@ -170,7 +170,7 @@ export default function Project({
               </div>
               <div>
                 <Link
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/5 backdrop-blur-md"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border dark:border-white/5 border-gray-500 backdrop-blur-md"
                   href={`/project/${id}`}
                 >
                   <FaArrowUpRightFromSquare />
