@@ -38,10 +38,6 @@ export default function Hero() {
           className="md:hidden w-full h-auto rounded-2xl  shadow-lg mx-auto"
           priority
         />
-        {/* exprience bages */}
-        <div className="absolute bottom-0 left-0 z-50 bg-white rounded-lg">
-          <div className="p-4 text-black">1+ Year Experience</div>
-        </div>
         <ImageAnimating>
           <div className="hidden md:flex items-center justify-center group  w-full h-auto">
             <Image
