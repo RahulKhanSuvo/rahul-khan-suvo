@@ -19,7 +19,7 @@ export default function ProjectHero({
   backgroundImage,
 }: ProjectHeroProps) {
   return (
-    <div className="relative w-full overflow-hidden flex flex-col items-center pt-32 pb-48 px-4 text-center">
+    <div className="relative w-full overflow-hidden flex flex-col items-center pt-24 pb-32 md:pt-32 md:pb-48 px-4 text-center">
       {/* Faded Background */}
       <motion.div
         initial={{ opacity: 0 }}

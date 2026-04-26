@@ -13,7 +13,7 @@ export default function ProjectSectionBlock({
   items,
 }: ProjectSectionBlockProps) {
   return (
-    <div className="max-w-4xl mx-auto px-4 mt-32 overflow-hidden">
+    <div className="max-w-4xl mx-auto px-4 mt-16 md:mt-32 overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
