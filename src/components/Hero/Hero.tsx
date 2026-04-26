@@ -34,7 +34,7 @@ export default function Hero() {
           alt="Profile picture of Rahul Khan Suvo"
           width={280}
           height={320}
-          className="md:hidden w-full h-auto rounded-[2rem] shadow-2xl mx-auto border-4 border-white/10"
+          className="md:hidden w-full h-auto rounded-4xl shadow-2xl mx-auto border-4 border-white/10"
           priority
         />
         <ImageAnimating>
@@ -59,7 +59,7 @@ export default function Hero() {
               alt="Profile picture of Rahul Khan Suvo"
               height={417}
               width={357}
-              className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-[2rem] border-4 border-white/20 shadow-2xl group-hover:scale-[102%] group-hover:border-primary/50 ease-in-out duration-300 transition-all overflow-hidden object-cover"
+              className="min-w-[350px] h-[415px] z-10 mr-[7.7px] my-[6.5px] rounded-4xl border-4 border-white/20 shadow-2xl group-hover:scale-[102%] group-hover:border-primary/50 ease-in-out duration-300 transition-all overflow-hidden object-cover"
             />
           </div>
         </ImageAnimating>
