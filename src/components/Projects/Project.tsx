@@ -66,7 +66,7 @@ export default function Project({
           ))}
         </div>
 
-        <div className="w-full rounded-xl flex justify-between">
+        <div className="w-full rounded-xl flex">
           <a
             href={link.githubLink}
             target="_blank"
