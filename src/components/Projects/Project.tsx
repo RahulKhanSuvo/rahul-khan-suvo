@@ -47,7 +47,7 @@ export default function Project({
         />
       </div>
 
-      <div className="flex flex-col gap-[11px] w-full">
+      <div className="w-full flex items-center"><div className="flex flex-col gap-[11px] w-full">
         <div className="flex justify-between items-center">
           <h3 className="font-semibold text-xl md:text-[22px]">{title}</h3>
         </div>
@@ -95,7 +95,7 @@ export default function Project({
             <span className="hidden md:block">Live</span>
           </a>
         </div>
-      </div>
+      </div></div>
     </motion.div>
   );
 }
