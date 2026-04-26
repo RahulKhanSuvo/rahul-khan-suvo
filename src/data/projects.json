@@ -2,17 +2,18 @@
   {
     "id": 1,
     "thumbnail": [
-      "https://i.ibb.co/0RKcNDz9/screencapture-asset-panda-rahul-khan-suvo-netlify-app-dashboard-hr-Home-2025-05-08-00-56-04.png",
+      "https://i.ibb.co.com/wNLk2wgK/Gemini-Generated-Image-8pfkv08pfkv08pfk-2-1.jpg",
       "https://i.ibb.co/v604ZmBT/Screenshot-2025-05-08-005829.png",
       "https://i.ibb.co/Sw8kzqW2/screencapture-asset-panda-rahul-khan-suvo-netlify-app-login-2025-05-08-00-56-43.png"
     ],
-    "title": "Asset-Panda",
+    "title": "JobZilla",
     "link": {
-      "label": "Asset-Panda.com",
-      "url": "https://asset-panda-rahul-khan-suvo.netlify.app/",
-      "githubLink": "https://github.com/RahulKhanSuvo/asset-panda-client"
+      "label": "JobZilla.com",
+      "url": "https://job-zilla.vercel.app/",
+      "githubLink": "https://github.com/RahulKhanSuvo/job-zilla",
+      "clientLink": "https://github.com/RahulKhanSuvo/job-zilla-client"
     },
-    "description": "AssetPanda is a web-based platform designed to help manage assets within a company, track employee asset requests, and provide a smooth experience for both employees and administrators.",
+    "description": "JobZilla is a web-based platform designed to help manage jobs within a company, track employee job requests, and provide a smooth experience for both employees and administrators.",
     "languageIcons": [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",

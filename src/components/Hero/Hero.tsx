@@ -18,7 +18,7 @@ export default function Hero() {
           <a
             href="https://drive.google.com/uc?export=download&id=1-j0laNGiXknvDWZ3RnZbsfp4CRcYquNC"
             download
-            className="bg-[var(--primary)] text-white rounded-[4px] px-4 py-2 md:px-8 md:py-2   md:text-4xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
+            className="bg-(--primary) text-white rounded-[4px] px-4 py-2 md:px-8 md:py-2   md:text-4xl transition-all flex items-center gap-2 md:self-start hover:scale-105 duration-300"
           >
             Resume{" "}
             <span>
@@ -38,6 +38,10 @@ export default function Hero() {
           className="md:hidden w-full h-auto rounded-2xl  shadow-lg mx-auto"
           priority
         />
+        {/* exprience bages */}
+        <div className="absolute bottom-0 left-0 z-50 bg-white rounded-lg">
+          <div className="p-4 text-black">1+ Year Experience</div>
+        </div>
         <ImageAnimating>
           <div className="hidden md:flex items-center justify-center group  w-full h-auto">
             <Image
