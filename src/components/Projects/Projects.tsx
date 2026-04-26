@@ -4,33 +4,6 @@ import SectionHeader from "../Section/SectionHeader";
 import projects from "@/data/projects.json";
 import Project from "./Project";
 import Image from "next/image";
-import { motion, useInView } from "motion/react";
-import { useRef } from "react";
-
-// Individual animated card — uses its own ref so it's
-// independent of any parent motion context.
-function AnimatedCard({
-  children,
-  delay,
-}: {
-  children: React.ReactNode;
-  delay: number;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.15 });
-
-  return (
-    <motion.div
-      ref={ref}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
-      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
-      // Start hidden (no `initial` prop needed — `animate` drives it)
-      style={{ opacity: 0, y: 60 }}
-    >
-      {children}
-    </motion.div>
-  );
-}
 
 export default function Projects() {
   return (
@@ -40,17 +13,16 @@ export default function Projects() {
 
         <div className="lg:w-full space-y-10 mt-10">
           {projects.map((project, index) => (
-            <AnimatedCard key={project.id} delay={index * 0.12}>
-              <Project
-                id={project.id}
-                index={index % 2 === 0}
-                thumbnail={project.thumbnail[0]}
-                title={project.title}
-                link={project.link}
-                description={project.description}
-                languageIcons={project.languageIcons}
-              />
-            </AnimatedCard>
+            <Project
+              key={project.id}
+              id={project.id}
+              index={index % 2 === 0}
+              thumbnail={project.thumbnail[0]}
+              title={project.title}
+              link={project.link}
+              description={project.description}
+              languageIcons={project.languageIcons}
+            />
           ))}
         </div>
       </div>
